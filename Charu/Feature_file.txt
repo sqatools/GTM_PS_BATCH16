@@ -1,0 +1,3 @@
+adding  new file o git repository
+
+inside a feature file
