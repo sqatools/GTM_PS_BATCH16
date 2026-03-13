@@ -65,7 +65,7 @@ var1 = 40.45
 var2 = 5990
 var3 = 'Hello'
 var4 = "Hello Python"
-var5 = """"We are Learnign Python"""
+var5 = """We are Learnign Python"""
 
 
 ############# Math Operation of numbers ##############
