@@ -52,3 +52,11 @@ r = 2
 area = pi*(r**2)
 print(area)
 
+#20. Prog to calculate simple interest
+p = 100
+r = 2
+t = 10.5
+
+#si = p+(p/r)*t
+si= (p*r*t)/100
+print(si)
