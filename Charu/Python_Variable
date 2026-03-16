@@ -1,0 +1,62 @@
+# 1. python prog to add two integer values.
+a = 10
+b=20
+c = a+b
+print(c)
+
+#2. python prog to subtract two integer values.
+x= 20
+y = 5
+print(x-y)
+
+#3. prog to multiply two numbers
+num1 = 300
+num2= 50
+num3 = num1*num2
+print(num3)
+
+#4. prog to repeat a given string 5 times
+str1 = "SQATools"
+print(str1*5)
+
+#5. prog to get the average of numbers
+a1=40
+a2=50
+a3=30
+sum = (a1+a2+a3)//3
+print(sum)
+
+#7. prog to get the square and cube  of given number
+num = 9
+print("square of a number: ",num**2)
+print("cube of a number : ",num**3)
+
+#8. prog to interchange values
+val1 = 20
+val2 = 30
+val1, val2 = val2, val1
+print("values after iterchange val1 : ",val1,"val2:",val2)
+
+#9. program to solve pythagoras theorom 
+A = 3
+B = 4
+
+C = A**2 + B**2 
+
+print(C)
+
+#16. prog to calculate area of a circle
+pi = 3.14
+r = 2
+
+area = pi*(r**2)
+print(area)
+
+#20. Prog to calculate simple interest
+p = 100
+r = 2
+t = 10.5
+
+#si = p+(p/r)*t
+si= (p*r*t)/100
+print(si)

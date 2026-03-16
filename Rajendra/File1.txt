@@ -1,1 +1,6 @@
 print("hello world")
+
+
+C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code - vscode
+
+C:\Program Files\JetBrains\PyCharm 2025.3.3 -- pycharm
