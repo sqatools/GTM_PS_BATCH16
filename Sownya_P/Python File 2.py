@@ -1,0 +1,1 @@
+print("today's class is about installation  and configuration")
