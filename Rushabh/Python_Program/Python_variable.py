@@ -168,3 +168,10 @@ dict2 = {"name": "Rahul", "age": 25, "city": "Mumbai",
 print(dict2["hobbies"][1])
 print(dict2["education"]["major"])
 
+#---------------------------------------------------------- 
+# Set
+set1 = {10, 20, 30, 40, 50,10, 20}
+print(set1, type(set1))
+
+set2 = {"Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True,10, 20.5,}
+print(set2)
