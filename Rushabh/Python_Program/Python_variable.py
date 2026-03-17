@@ -144,3 +144,25 @@ print(list1, type(list1))
 list2 = ["Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True]
 print(list2[6][2])
 print(list2[7][1])
+
+#----------------------------------------------------------
+# Tuple 
+tuple1 = (20, 10 ,50 ,79,90,10,40)
+print(tuple1, type(tuple1))
+
+tuple2 = ("Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True)
+print(tuple2[6][2]) 
+print(tuple2[7][1])
+
+#----------------------------------------------------------
+# Dictionary    
+dict1 = {"name": "Rahul", "age": 25, "city": "Mumbai"}
+print(dict1, type(dict1))
+print(dict1["name"])
+print(dict1["age"])     
+print(dict1["city"])
+
+dict2 = {"name": "Rahul", "age": 25, "city": "Mumbai", "hobbies": ["Reading", "Traveling", "Cooking"], "education": {"degree": "Bachelor's", "major": "Computer Science"}}
+print(dict2["hobbies"][1])
+print(dict2["education"]["major"])
+
