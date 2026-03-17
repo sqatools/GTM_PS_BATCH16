@@ -162,7 +162,9 @@ print(dict1["name"])
 print(dict1["age"])     
 print(dict1["city"])
 
-dict2 = {"name": "Rahul", "age": 25, "city": "Mumbai", "hobbies": ["Reading", "Traveling", "Cooking"], "education": {"degree": "Bachelor's", "major": "Computer Science"}}
+dict2 = {"name": "Rahul", "age": 25, "city": "Mumbai",
+          "hobbies": ["Reading", "Traveling", "Cooking"], 
+          "education": {"degree": "Bachelor's", "major": "Computer Science"}}
 print(dict2["hobbies"][1])
 print(dict2["education"]["major"])
 
