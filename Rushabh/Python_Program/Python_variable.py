@@ -78,3 +78,69 @@ print("Cube of num2:", cube_num2)
 floor_division = num1 // num2
 print("Floor division of num1 and num2:", floor_division)   
 
+
+R1 = 5
+R2 = 10     
+R3 = 5
+# compare values of variables
+print(R1 == R2)
+print(R1 == R3)
+print(R2 == R3)
+
+#---------------------------------------------------------------------------------------------
+
+#Integer
+
+n1 = 0
+n2 = 100
+n3 = 18186565163
+print(n1, type(n1)) 
+print(n2, type(n2)) 
+print(n3, type(n3))
+
+#----------------------------------------------------------
+# Float
+
+x1 = 0.0
+x2 = 0.3    
+x3 = 45.6678889
+x4 = 8990809.54545
+
+print(x1, type(x1))
+print(x2, type(x2))
+print(x3, type(x3))
+print(x4, type(x4))
+
+#----------------------------------------------------------
+# String    
+
+s1 = "Hello"
+s2 = 'Python'
+s3 = """Hello, 'Python' is a great language!"""
+s4 = '''Hello, "Python" is a great language!'''
+
+print(s1, type(s1))
+print(s2, type(s2))
+print(s3, type(s3))
+print(s4, type(s4))
+
+"""
+0  1 2 3 4 6
+P  y   t   h   o   n
+-6 -5  -4  -3  -2  -1 
+
+"""
+
+s5 = "Python"
+print(s5[2])
+print(s5[-3])
+
+#----------------------------------------------------------
+# List
+
+list1 = [20, 10 ,50 ,79,90,10,40]
+print(list1, type(list1))
+
+list2 = ["Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True]
+print(list2[6][2])
+print(list2[7][1])
