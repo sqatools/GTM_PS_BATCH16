@@ -160,6 +160,6 @@ print(num , type(num)) # 6789 <class 'int'>
 
 # integer to string
 num1 = 78978789
-s1 = str(num1)
-print(s1, type(s1), s1[-1])
+s1 = str(num1) # 6789 <class 'int'>
+print(s1, type(s1), s1[-1]) # 78978789 <class 'str'> 9
 
