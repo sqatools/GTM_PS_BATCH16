@@ -268,3 +268,8 @@ if type(v) == str:
     print("The given value is string")
 else:
     print("The given value is not string")
+
+
+
+
+
