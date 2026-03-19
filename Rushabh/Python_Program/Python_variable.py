@@ -178,8 +178,7 @@ print(set2, type(set2))
 
 #----------------------------------------------------------
 
-#WAP to get all the people age eho are eligible to vote using for loop and if condition
-
+#WAP to get all the people age eho are eligible to vote 
 list4 = [6, 7, 9, 23, 45, 12, 68, 24, 18]
 
 for age in list4:
@@ -189,7 +188,13 @@ for age in list4:
         print(age, "is not eligible to vote") 
 
 
+# write a program to square all the value which are divisible by 5 
+list2 = [5, 10, 7, 23, 12, 5, 7, 35, 45]
 
-
+for val in list2:
+    if val % 5 == 0:
+        print("Square of", val, "is", val**2)  
+    else:
+        print(val, "is not divisible by 5")
 
 
