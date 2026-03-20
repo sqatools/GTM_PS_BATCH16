@@ -92,7 +92,7 @@ else:
     print(num, "is not a prime number")
 
 
-    print("-"*50)
+print("-"*50)
 
 ## print prime numbers from 1 to 100
 
@@ -104,3 +104,24 @@ for num in range(2, 101):
             break
     if prime == True:
         print(num, "is a prime number")   
+
+print("-"*50)
+
+
+
+# while loop 
+
+i = 1
+while i <= 10:
+    print(i)
+    i = i + 1
+
+
+print ()
+print("-"*50)
+
+while True:
+  for i in range (1,100):
+    print("loop count", i)
+    if i == 10:
+        break
