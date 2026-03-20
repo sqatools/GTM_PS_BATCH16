@@ -1,5 +1,13 @@
-##  1. Number is divisible by 3 or not  ###
+###
 
+from itertools import count
+
+
+x= 5
+x= x+3
+print(x)
+
+##  1. Number is divisible by 3 or not  ###
 
 num = 9
 if num % 3 == 0:
@@ -83,3 +91,52 @@ if n2 > 1:
     else:
          print(n2, "is a prime number")
 
+print("-"*50)
+
+###  program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700
+
+for i in range(1500, 2701):
+    if i % 7 == 0 and i % 5 == 0:
+        print(i, "is divisible by 7 & 5")   
+
+
+print(*"-"*50)
+
+##program that will add the word from the user to the empty string using python.
+
+string1 = "python"
+sum = ""
+for i in string1:
+    sum = sum + i
+print(sum)
+
+     
+## program to count the number of even and odd numbers from a series of numbers
+
+count1=0
+count2=0
+for i in range(1, 11):
+    if i % 2 == 0:
+        count1 = count1 + 1
+        print(i, "is an even number")
+    else:
+        count2 = count2 + 1
+        print(i, "is an odd number")
+print("The total count of even numbers is: ", count1)
+print("The total count of odd numbers is: ", count2)
+
+
+print ()
+
+
+## print * in pattern 
+
+for i in range(1,6):
+    for j in range(1, i+1):
+        print("*", end=" ")
+    print() 
+
+for j in range(5, 0, -1):
+    for k in range(1, j+1):
+        print("*", end=" ")
+    print()
