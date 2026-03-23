@@ -173,5 +173,45 @@ print(dict2["education"]["major"])
 set1 = {10, 20, 30, 40, 50,10, 20}
 print(set1, type(set1))
 
-set2 = {"Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True,10, 20.5,}
+set2 = {"Python", "Programming", "is", "fun",10, 20.5, (1, 2, 3), (4, 6), True,10, 20.5,}
 print(set2, type(set2))
+
+#----------------------------------------------------------
+
+#WAP to get all the people age eho are eligible to vote 
+list4 = [6, 7, 9, 23, 45, 12, 68, 24, 18]
+
+for age in list4:
+    if age >= 18:
+        print(age, "is eligible to vote")  
+    else:
+        print(age, "is not eligible to vote") 
+
+
+# write a program to square all the value which are divisible by 5 
+list2 = [5, 10, 7, 23, 12, 5, 7, 35, 45]
+
+for val in list2:
+    if val % 5 == 0:
+        print("Square of", val, "is", val**2)  
+    else:
+        print(val, "is not divisible by 5")
+
+
+print("#"*50)
+
+for r in range(1500, 2701):
+    if r % 7 == 0 and r % 5 == 0:
+        print(r)
+
+
+# word= input("Enter a word: ")
+# str = ""
+# for i in range(len(word)):
+#     str = str +word[i]  
+# print("word:", str)
+
+for i in range(1, 11):
+    print(i, end=" ")
+    for j in range(1, 11):
+        print( j, i+ j, end=" ")
