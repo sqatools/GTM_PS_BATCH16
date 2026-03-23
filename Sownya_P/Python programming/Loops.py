@@ -120,8 +120,11 @@ while i <= 10:
 print ()
 print("-"*50)
 
+## infinte while loop
+
 while True:
-  for i in range (1,100):
+  for i in range ( 1,100):
     print("loop count", i)
     if i == 10:
         break
+    
