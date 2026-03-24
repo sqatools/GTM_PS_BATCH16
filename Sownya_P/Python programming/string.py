@@ -131,5 +131,40 @@ str11 ="SownyaSreePothukuchi"
 
 print(" ".join(str11))
 
-## qstn === how can we procide space between words using join method ?
+## qstn === how can we provide space between words using join method ?
 #  ##is it through list ? 
+
+tup1 = ("python", "is", "a", "programming", "language") 
+
+print(" ".join(tup1))
+
+
+
+## is numeric method to check whether the string is numeric or not
+
+str1 = "1234"   
+str2 = "python1234 1234"
+
+print(str1.isnumeric())
+print(str2.isnumeric())
+
+
+## is alpha method to check whether the string is alphabetic or not
+
+str1 = "python"
+str2 = "python aa"
+
+print(str1.isalpha())
+print(str2.isalpha())
+
+print("-"*50)
+## isalphanumeric method to check whether the string is alphanumeric or not
+
+str1 = "python1234"
+str2 = "python aa"
+str3 = "python1234 aa"
+
+print(str1.isalnum())
+print(str2.isalnum())
+print(str3.isalnum())
+

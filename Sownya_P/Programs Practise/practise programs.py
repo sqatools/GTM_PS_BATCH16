@@ -140,3 +140,8 @@ for j in range(5, 0, -1):
     for k in range(1, j+1):
         print("*", end=" ")
     print()
+
+print("$"*50)
+
+
+print(type(True + 1))
