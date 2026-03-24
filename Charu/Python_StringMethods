@@ -1,0 +1,86 @@
+'''1. program to get a string made of first and last two char of the string , 
+    if string length is less than 2 return the string '''
+
+str1 = "am"
+# first_char = str1[0]
+# last_char = str1[-2:]
+
+# print("first char :",first_char)
+# print("last character:", last_char)
+
+# combine_str = first_char + last_char
+# print("combining string characters: ",combine_str)
+
+# if len(combine_str) <= 2:
+#     print(str1)
+# else:
+#     print(combine_str)
+
+if(len(str1)) <=2:
+    print(True)
+
+else:
+    print(str1[:2] + str1[-2:])
+
+#2. program that takes the lists of string and returns the 
+# length of the longest string
+
+l1 = ["hi","hello","welcome","pythonprogram"]
+temp = 0
+for word in l1:
+    a = len(word)
+    if a> temp:
+        temp = a
+print(temp)
+
+#3. program to make 4 copies of last 2 char of the string 
+st = "python"
+a = print(st[-2:]*4)
+
+#4. program to reverse a string if its length is a  multipe of 4
+str2 = "programm"
+if len(str2)%4==0:
+    print(str2[::-1])
+else:
+    print("None")
+
+#5. program to count substring of the string 
+str3 = "python program, python is easy to learn"
+sub_str = "python"
+
+print(str3.count(sub_str))
+
+#6.check the character is a vowel or a consonant
+charr = "mumbai"
+for char1 in charr:
+    if  char1=='a' or char1 =='e' or char1=='i' or char1=='o' or char1=='u':
+        print("character is a vowel:", char1)
+    else:
+        print("character is a consonant",char1)
+
+#7. find the smallest and the longest word in the input string
+input_str = "hi hello world python programming"
+list1 = input_str.split()
+
+print("maximum char word: ",max(list1))
+print("minimum char word : ",min(list1))
+
+#8. print most simultaneously repeated charcters in the input string
+str4 = "programming world of python"
+
+
+
+#9. program to calculate length of string with loop logic
+count_num = 0 
+for i in str4:
+    count_num = count_num + 1
+print(count_num)
+#print(len(str4))
+
+#10. prog to replace 2nd occurrence ofany char wih special char $
+input_str1 = "programming"
+li_str = input_str1.split()
+print(li_str)
+modified_str  = '$'.join(li_str)
+print("modified string =" ,modified_str)
+

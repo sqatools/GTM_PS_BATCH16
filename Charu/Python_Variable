@@ -60,3 +60,17 @@ t = 10.5
 #si = p+(p/r)*t
 si= (p*r*t)/100
 print(si)
+
+#19. Program to check armstrong number
+num = input("enter any number")
+sum = 0
+
+while num>0:
+    rem = num%10
+    rev = rev + rem**3
+    num = num//10
+
+if rev==num:
+    print("num is amstrong number:", num)
+else:
+    print("num is not armstrong number")

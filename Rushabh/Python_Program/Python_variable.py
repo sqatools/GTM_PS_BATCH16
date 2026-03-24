@@ -198,3 +198,20 @@ for val in list2:
         print(val, "is not divisible by 5")
 
 
+print("#"*50)
+
+for r in range(1500, 2701):
+    if r % 7 == 0 and r % 5 == 0:
+        print(r)
+
+
+# word= input("Enter a word: ")
+# str = ""
+# for i in range(len(word)):
+#     str = str +word[i]  
+# print("word:", str)
+
+for i in range(1, 11):
+    print(i, end=" ")
+    for j in range(1, 11):
+        print( j, i+ j, end=" ")
