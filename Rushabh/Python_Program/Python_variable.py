@@ -211,7 +211,3 @@ for r in range(1500, 2701):
 #     str = str +word[i]  
 # print("word:", str)
 
-for i in range(1, 11):
-    print(i, end=" ")
-    for j in range(1, 11):
-        print( j, i+ j, end=" ")
