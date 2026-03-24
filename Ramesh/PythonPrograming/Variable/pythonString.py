@@ -99,3 +99,32 @@ print(" ".join(list1))
 
 str_i = "Cricket"
 print(" ".join(str_i))
+
+
+##############################################
+
+
+# isnumeruc : this method if string contains only numbers.
+
+s1 = "2323423"
+s2 = "5236463 634"
+
+print(s1.isnumeric())
+print(s2.isnumeric())
+
+# isalpha() : this method check string only contains alphabates.
+
+s3 = "Hello"
+s4 = "Python Program"
+
+print(s3.isalpha())
+print(s4.isalpha())
+
+
+# isalnum() : this method check string contains alphabates and numbers.
+
+s5 = "Learning Python"
+s6 = "Program12345"
+
+print(s5.isalnum())
+print(s6.isalnum())
