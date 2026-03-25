@@ -51,3 +51,15 @@ substring = "Python"
 
 count = str6.count(substring)
 print(f"The substring '{substring}' occurs {count} times in the string.")   
+
+
+Ramesh = (5, 7, 8)
+Rushabh = (10, 3.56, 'India', (4, 7), [4, 7], {'a': 567}, {5, 6, 7}, False)
+
+print(Ramesh, type(Ramesh))
+print(Rushabh, type(Rushabh))
+
+
+# tuple follows same +ve and -ve indexing as like string and list
+print(Rushabh[6]) # {'a': 567}
+print(Rushabh[6][1]) # 567
