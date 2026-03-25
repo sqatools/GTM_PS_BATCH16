@@ -131,3 +131,4 @@ s5 = "Learning Python"
 s6 = "Program12345"
 print(s5.isalnum()) # False
 print(s6.isalnum()) # True
+
