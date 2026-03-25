@@ -107,3 +107,28 @@ str_m = "Cricket"
 print("$".join(str_m)) # C$r$i$c$k$e$t
 
 print("".join(str_m)) # Cricket
+
+print("_"*40)
+######################################
+# isnumeric :  this method if string contains only numbers.
+
+s1 = "465464"
+s2 = "8976897 443"
+print(s1.isnumeric()) # True
+print(s2.isnumeric()) # False
+
+
+# isalpha() : this method check string only contains alphabastes.
+
+s3 = "Hello"
+s4 = "Python Program"
+print(s3.isalpha()) # True
+print(s4.isalpha()) # False
+
+# isalnum() : This method check string contains alphbates and numbers.
+
+s5 = "Learning Python"
+s6 = "Program12345"
+print(s5.isalnum()) # False
+print(s6.isalnum()) # True
+
