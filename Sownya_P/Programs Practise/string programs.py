@@ -76,9 +76,6 @@ print("$"*50)
 
 ## Python string program to count occurrences of a substring in a string.
 
-
-
-
 str1 = "Practising Python Programs"
 str2 = "Pr"
 count = 0
