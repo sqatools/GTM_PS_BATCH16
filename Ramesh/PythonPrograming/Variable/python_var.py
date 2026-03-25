@@ -1,7 +1,8 @@
 a = 10
-
 b = 20
 c = 10
+
+
 
 print("value of a is ", a, id(a))
 print("value of b is ", b, id(b))
