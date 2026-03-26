@@ -53,13 +53,38 @@ count = str6.count(substring)
 print(f"The substring '{substring}' occurs {count} times in the string.")   
 
 
-Ramesh = (5, 7, 8)
-Rushabh = (10, 3.56, 'India', (4, 7), [4, 7], {'a': 567}, {5, 6, 7}, False)
+Ra1 = (5, 7, 8)
+Rus = (10, 3.56, 'India', (4, 7), [4, 7], {'a': 567}, {5, 6, 7}, False)
 
-print(Ramesh, type(Ramesh))
-print(Rushabh, type(Rushabh))
-
+print(Ra1, type(Ra1))
+print(Rus, type(Rus))
 
 # tuple follows same +ve and -ve indexing as like string and list
-print(Rushabh[6]) # {'a': 567}
-print(Rushabh[6][1]) # 567
+print(Rus[6]) 
+print(Rus[5]['a'])
+
+
+l2 = [3, 4.5, 'Hello', [4, 5, 7], (4, 6), {'a': 123}, {3, 5, 6}, True]
+
+l2[3]="karan"
+l2[2]=[4,5,7]
+l2[-1]=False
+
+l2.append((4, 6))
+print(l2)
+
+
+str11 = "Python is a great programming language. Python is widely used."
+print(str11.count("Python"))
+
+str11 = str11.upper()
+print(str11)
+
+str11 = str11.lower()
+print(str11)
+
+str11 = str11.title()
+print(str11)
+
+str11 = str11.swapcase()
+print(str11)    
