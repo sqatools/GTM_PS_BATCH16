@@ -48,3 +48,41 @@ for x in list1:
         max1 = x
 print("min and max values are", min1, "and ", max1 )
 
+## program to differentiate even and odd elements from the given list into a list
+
+list1 = [21,8,154,30,17,200,53,78]
+list2 = []
+list3 = []
+for x in list1:
+    if x%2 == 0:
+        list2.append(x)
+    else:
+       list3.append(x)
+print("odd and even numbers are", list2, "and ", list3)
+
+print("-"*50)
+
+## program to differentiate even and odd numbers from given list
+list1 = [21,8,155,30,17,200,53,78]
+
+for x in list1:
+    if x%2 == 0:
+        print("even no. : ", x )
+    else:
+        print("odd number : ", x )
+
+
+print("-"*50)
+## program to remove all duplicate elements from the list.
+
+list1 = [ 2,8,15,30,80,2,16,30,77,80,230]
+out1= []
+for x in list1:
+    if x not in out1:
+        out1.append(x)
+
+print(out1)
+
+print("-"*50)
+
+## program to print a combination of 2 elements from the list whose sum is 10.
