@@ -103,6 +103,7 @@ list_j = [5, 7, 8, 9, 2, 3, 1]
 list_j.sort(reverse=True)
 print("Descending order :", list_j) # [9, 8, 7, 5, 3, 2, 1]
 
+print("#"*50)
 #############
 # sorted function :  it returns the sorted value in ascending
 # in descending order without modifying original list
@@ -111,3 +112,69 @@ result =  sorted(list_k)
 result2 = sorted(list_k, reverse=True)
 print("ascending result :", result) # [1, 2, 3, 5, 7, 8, 9, 10, 20]
 print("descending result :", result2)  # [20, 10, 9, 8, 7, 5, 3, 2, 1]
+
+
+
+
+print("#"*50)
+#############
+# Deep Copy and Shallow Copy
+# shallow copy : In shallow copy if we modify any value in one of the list
+# but changes will reflect in both lists.
+
+list_b = [6, 7, 8, 9]
+list_c = list_b
+list_c.append(100)
+list_b.append(500)
+
+print("list_b :", list_b) # [6, 7, 8, 9, 100, 500]
+print("list_c :", list_c) # [6, 7, 8, 9, 100, 500]
+
+
+
+print("#"*50)
+#############
+# deep copy: when we copy data from one list to another list and if we modify any of the list
+# than changes will reflect on that specific list only.
+
+
+list_x = [5, 6, 8, 23, 12]
+list_y = list_x.copy()
+list_y.append(200)
+list_x.append(500)
+
+print("list_x :", list_x) #  [5, 6, 8, 23, 12, 500]
+print("list_y :", list_y) # [5, 6, 8, 23, 12, 200]
+
+
+
+print("#"*50)
+#######################
+# max(), min(), sum() function.
+
+list_z = [5, 6, 70, 2, 15, 16]
+print("Max value :", max(list_z)) # Max value : 70
+print("Min value :", min(list_z)) # Min value : 2
+print("Sum of all values :", sum(list_z)) # Sum of all values : 114
+
+
+######################### list comprehension ###################
+
+list1 = [2, 5, 7, 8, 12, 3, 5, 14]
+output = []
+
+for val in list1:
+    if val%2 == 0:
+        output.append(val)
+    else:
+        continue
+
+print("output :", output)
+
+# solve above program to list comprehension
+result = [val for val in list1 if val%2 == 0]
+print("even result :",  result) #  [2, 8, 12, 14]
+# [2, 8, 12, 14]
+
+print(dir(list))
+# 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
