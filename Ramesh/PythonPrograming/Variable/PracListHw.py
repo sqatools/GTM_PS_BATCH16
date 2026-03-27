@@ -122,3 +122,4 @@ for value in list_c:
         continue
 
 print(common_list)
+
