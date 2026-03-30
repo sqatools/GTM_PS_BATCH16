@@ -86,3 +86,5 @@ print(out1)
 print("-"*50)
 
 ## program to print a combination of 2 elements from the list whose sum is 10.
+
+
