@@ -49,6 +49,7 @@ multiplication(5, 6)
 # update the default value of n3 from 10 to 7
 multiplication(5, 6, 7)
 
+<<<<<<< HEAD
 
 # function with return statement
 def get_square(n):
@@ -107,3 +108,9 @@ def calculator(option, num1,num2):
 print("_"*50)
 calculator(1, 30, 40)
 
+=======
+#########################################
+
+
+print("Hello World")
+>>>>>>> 8e9c9d4a8453716da6f1554b12f6cc4c2c36633e
