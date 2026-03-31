@@ -31,11 +31,11 @@ print(set1)
 
 
 #remove some element from set using remove() method
-
+# and if elementis not present in the set it will throw an error
 set1.remove(3.4)
 print(set1)
 
-## remove an element from a set randnomly using pop() method
+## remove an element from a set randnomly using pop() method 
 print("before pop : ", set1)
 set1.pop()
 print("after pop : ", set1)
@@ -45,3 +45,4 @@ set1.discard(55)
 print(set1)
 set1.discard(500)  ## as 500 is not present in the set it will not throw any error
 print(set1) 
+
