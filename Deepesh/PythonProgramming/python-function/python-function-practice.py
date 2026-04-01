@@ -46,5 +46,8 @@ def multiplication(n1, n2, n3=10):
 # n3 will keep default value as n3=10
 multiplication(5, 6)
 
-# update the default value of n3 from 10 to 7
-multiplication(5, 6, 7)
+# return method
+def add():
+    return 10
+
+add()
