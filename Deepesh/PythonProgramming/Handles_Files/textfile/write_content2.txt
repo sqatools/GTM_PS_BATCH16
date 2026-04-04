@@ -1,0 +1,1 @@
+we are learning file handling, here data is updated with write mode
