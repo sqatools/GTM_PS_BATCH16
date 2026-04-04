@@ -19,11 +19,9 @@ addition(x, y)
 
 # function without parameter 
 def hello():
-    print("Hello word")
+    print("Hello word")     
 
 print("_"*50)
-hello()
-hello()
 hello()
 
 
@@ -40,3 +38,14 @@ multiplication(5, 6)
 
 # update the default value of n3 from 10 to 7
 multiplication(5, 6, 7)
+
+
+
+
+
+def call(p1, p2):
+    print ("addition:",p1 + p2)
+
+call(12, 50)
+
+
