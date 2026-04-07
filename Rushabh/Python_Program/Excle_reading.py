@@ -13,10 +13,13 @@ def read_excel_file(file_path, sheet_name):
     wb = openpyxl.load_workbook(filename=file_path)
     sheet = wb[sheet_name]
     # get max number of updated rows in sheet
+
     max_row_value = sheet.max_row
     # get max number of updated colms in sheet
+
     max_colum_value = sheet.max_column
     # i consider as row number
+    
     for i in range(1, max_row_value):
         # j consider as colum number
         for j in range(1, max_colum_value):
