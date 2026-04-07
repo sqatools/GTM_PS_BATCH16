@@ -18,4 +18,4 @@ print("5 days back date :", result.date()) # 2026-04-01
 
 #5 days ahead date.
 result2 = curr_date_time + timedelta(days=5)
-print("#5 days ahead date :", result2.date())
+print("#5 days ahead date :", result2.date()) # 2026-04-11
