@@ -37,6 +37,7 @@ def read_excel_file(file_path, sheet_name):
         for j in range(1, max_colum_value):
             print(sheet.cell(row=i, column=j).value, end= " ")
         print()
+        
 excel_file_path = r"C:\GitCode\GTM_PS_BATCH16\Ramesh\PythonPrograming\Variable\Handles_File\user_data.xlsx.xlsx"
 read_excel_file(file_path=excel_file_path, sheet_name="Sheet2")
 
