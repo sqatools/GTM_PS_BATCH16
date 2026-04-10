@@ -38,3 +38,17 @@ def append_file(file_path, content):
 append_file(file_path=r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\write_data.txt", content="\nThis is the additional content to be appended to the file.")  
 
 append_file(file_path=r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\xyz_text.txt", content="\nThis is the additional content to be appended to the file.")
+
+
+## context manager to handle file operations
+
+def read_file_with_context_manager(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        print(content) 
+        print("is file closed?", file.closed)  # Check if the file is closed after the block  
+
+    print("is file closed after the context manager block?", file.closed) 
+    # Check if the file is closed after the block    
+      
+read_file_with_context_manager(file_path='abc_text.txt')
