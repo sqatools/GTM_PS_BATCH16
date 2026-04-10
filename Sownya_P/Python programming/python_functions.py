@@ -65,3 +65,5 @@ def sum_of_numbers(n):
         if i == 5:
             return sum  ## will return the sum when i is 5 and break the function execution immediately      
 print(sum_of_numbers(10))  ## will return 15, which is the sum of numbers from 1 to 5
+
+
