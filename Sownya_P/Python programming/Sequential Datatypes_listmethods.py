@@ -93,3 +93,10 @@ print("descending order", list_e)
 print(sorted(list_e))
 
 print(sorted(list_e, reverse=True))
+
+## ## max , min and sum methods
+
+List_f = [ 12, 234.33 , 19,45678 , 5, 34]
+print("max value in list : ", max(List_f))
+print("min value in list : ", min(List_f))
+print("sum of all the elements in list : ", sum(List_f))

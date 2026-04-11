@@ -1,0 +1,12 @@
+number = 100         # global variable
+
+def print_number():
+    print(number)    # accessing global variable
+
+def modify_number():
+    global number    # declaring number as global variable
+    number = 200     # modifying global variable
+
+print_number()       # Output: 100
+modify_number()
+print_number()       # Output: 200

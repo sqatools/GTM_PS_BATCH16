@@ -61,6 +61,8 @@ print("*"*50)
 str="    Pyhton Program "
 print("Before using strip method-->",str)
 print("Remove extra spaces -->",str.strip())
+print(str.strip())
+print("*"*50)
 str1= "    Pythong Program "
 print("Before using split function", str1)
 print("After using split function",str1.strip())
@@ -68,9 +70,34 @@ print("After using split function",str1.strip())
 
 list1=["Hellow", "I","am","Ekta"]
 result="-".join(list1)
+
 print("Joining list -->",result)
 result=" ".join(list1)
 print("joining with spaces only--->",result)
 
 string_c="India"
 print("*".join(string_c))
+
+# Program to remove duplicates words from string
+
+strwords="Rahul Ravi Rohan Rohit Rahul Ravi Ronak Roshan"
+output=strwords.split()
+result=[]
+for word in output:
+    if word not in result:
+        result.append(word)
+
+        final=''.join(result)
+        
+        print(final)
+
+text=",,,,%%cgc... ekta...***  "
+print("Strip method:",text.strip("%*"))
+print("Strip method:",text.strip(" ,.%gc*"))
+
+b = "Hello, World!"
+print(b[-5:-2])
+
+
+
+

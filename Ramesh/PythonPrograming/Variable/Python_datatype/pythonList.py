@@ -91,3 +91,63 @@ result = sorted(list_j)
 result2 = sorted(list_j, reverse = True)
 print(result)
 print(result2)
+
+#########################################
+# Deep copy and shallow copy 
+# shallow copy : in shallow copy if we modify any value in any one of the list 
+# but changes will reflect in both list
+
+list_b = [6,7,8,9]
+list_c = list_b
+
+list_c.append(100)
+list_b.append(500)
+
+print(list_b)
+print(list_c)
+
+#################################
+
+# deeep copy : when we copy data from one list to another list and if we modify any of the list 
+# than changes will reflect on that specific list only
+
+list_x = [5,6,7,8,23]
+list_y = list_x.copy()
+list_y.append(200)
+list_x.append(500)
+
+print(list_x)
+print(list_y)
+
+
+#############################################
+
+
+# max(), min(), sum(), function.
+
+list_z = [5,6,70,2,15,16]
+
+print(max(list_z))
+print(min(list_z))
+print(sum(list_z))
+
+
+######################## list comprehention #####################
+
+list1 = [5, 7, 8, 12, 3, 5, 12]
+
+output = []
+
+for value in list1:
+    if value % 2 == 0:
+        output.append(value)
+    else:
+        continue
+
+print(output)
+
+# solve above program to list comprehension
+result = [value for value in list1 if value % 2 == 0]
+print(result)
+
+
