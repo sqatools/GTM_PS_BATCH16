@@ -101,6 +101,7 @@ print("Count of the character is ", a.count(ch))
 print("___"*20)
 
 print("###"*20)
+
 # if else problems 
 
 a = int(input())
