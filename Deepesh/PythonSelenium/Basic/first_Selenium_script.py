@@ -13,7 +13,6 @@ def launch_website_and_verify():
     time.sleep(5)
     driver.close()
 
-
 launch_website_and_verify()
 
 
