@@ -15,6 +15,7 @@ excel_file_path = r"C:\GitCode\GTM_PS_BATCH16\Ramesh\PythonPrograming\Variable\H
 
 read_excel_file(file_path=excel_file_path, sheet_name="Sheet1", cell_name="A1")
 
+print("--"*20)
 
 # for i in range(1, 7):
 #    read_excel_file(file_path=excel_file_path, sheet_name="Sheet1", cell_name=f"A{i}")
@@ -34,10 +35,11 @@ def read_excel_file(file_path, sheet_name):
         # j consider as a colum number
 
         for j in range(1, max_colum_value):
-            print(sheet.cell(row=i, colum=j).value, end= " ")
+            print(sheet.cell(row=i, column=j).value, end= " ")
         print()
-
-# read_excel_file(file_path=excel_file_path, sheet_name="Sheet2")
+        
+excel_file_path = r"C:\GitCode\GTM_PS_BATCH16\Ramesh\PythonPrograming\Variable\Handles_File\user_data.xlsx.xlsx"
+read_excel_file(file_path=excel_file_path, sheet_name="Sheet2")
 
 print("___"*10)
 def write_excel_file(file_path, sheet_name, cell_name, cell_value):
@@ -48,4 +50,4 @@ def write_excel_file(file_path, sheet_name, cell_name, cell_value):
     wb.save(file_path)
 
 
-write_excel_file(file_path=excel_file_path, sheet_name="Sheet3",cell_name="A1", cell_value="INDIA")
+# write_excel_file(file_path=excel_file_path, sheet_name="Sheet3",cell_name="A1", cell_value="INDIA")

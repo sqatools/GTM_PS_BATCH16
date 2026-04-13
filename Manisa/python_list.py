@@ -80,3 +80,105 @@ result = sorted(list_b)
 result1 = sorted(list_b, reverse = True)
 print(result)
 print(result1)
+
+
+#1). Python program to calculate the square of each number from the given list.
+
+list1 = [1, 2, 3, 4, 5]
+squared_list = []
+for num in list1:
+    squared_list.append(num **2)
+#squared_list = [num ** 2 for num in list1]#advanced way to calculate square of each number from the list
+print("sqaure_list-", squared_list)
+
+#2. Problem to add elements from list1 to list2
+
+list1 = [4, 9, 6, 7, 8]
+
+list2 = [8, 5, 6, 8]
+
+#list2.append(list1)
+list3 = list1+list2
+
+print(list3)
+
+for a in list1:
+    list2.append(a)
+
+print(list2)
+
+#3). Python program to calculate the sum of all elements from a list.
+
+list_s = [1,8,9,84,45]
+
+sum = 0
+
+for a in list_s:
+    sum = sum + a
+
+print(sum)
+
+list1 = [1,2,41,3]
+
+print(list1)
+#print(sum(list1))
+
+
+#4). Python program to find a product of all elements from a given list.
+
+list1 = [2, 5, 7, 8]
+
+product = 1
+
+for p in list1:
+    product = product*p
+
+print(product)
+
+#5). Python program to find the largest and smallest number from a given list.
+
+list1 = [9, 2, 11, 7, 8]
+
+list1.sort()
+
+print(list1)
+
+print("largest element - ", list1[0])
+length_list = len(list1)
+print(length_list)
+
+print("smallest element - ", list1[length_list-1])
+
+print(max(list1))
+print(min(list1))
+
+
+list_2 = [22, 45, 66, 11, 43]
+
+odd_list = []
+even_list = []
+
+for a in list_2:
+    if a%2 == 0:
+        print(a ,"is a even number")
+        even_list.append(a)
+    else:
+        print(a, "is a odd number")
+        odd_list.append(a)
+print("even_list :", even_list)
+print("odd_list :", odd_list)
+
+#program to remove all duplicate elements from the list
+
+list_y = [1, 6, 8, 88, 9, 88, 9, 2, 22, 23, 25, 6]
+
+list_u = []
+
+for a in list_y:
+    if a not in list_u:
+        list_u.append(a)
+print("unique list value :", list_u)
+
+
+
+
