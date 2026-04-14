@@ -1,0 +1,6 @@
+1. Automate dummy website except dropdown elements.
+https://sqatools.in/dummy-booking-website/
+
+2. Get handon on all locators we have convered 
+(ID, NAME, CLASS_NAME, LINK_TEXT, PARTIAL LINK_TEXT, TAGNAME)
+- get list of elements using find_elements method.
