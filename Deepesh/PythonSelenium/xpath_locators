@@ -1,0 +1,59 @@
+XPath : Xpath is selenium locator to indentify any element with the help html DOM.
+
+1. Absolute XPath: Follow entire dom structure to indentify the element. (Not Recommended)
+      e.g. /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+   
+2. Relative XPath: Relative xpath indentify the element with the help of element attribute
+     e.g.  //tagname[@attribute='value']  | //*[@attribute='value']
+      ->   //input[@placeholder="Username"]   |   //*[@placeholder="Username"] 
+    
+     // If multiple elements are matching with same property, then we use indexing
+        e.g. -> (//input[@id='firstname'])[1]
+
+Basic XPath Methods:
+
+1. Text Method.  : indentify the element with the help elements Text
+                 e.g.  //tagname[text()='text value']
+                 ->    //td[text()='Pune']
+                 ->    //a[text()='Tutorials']
+                 ->    //td[text()='6005']
+
+2. Contains Method. : indentify the element with PARTIAL attribute value or PARTIAL text value.
+               i). Partial Attribute value:  : //tagname[contains(@attribute, 'attribute value')]
+                                          ->   //input[contains(@id, 't_address1')]
+
+               ii). Partial Text Value:     //tagname[contains(text(), 'text value')]
+                                         -> //span[contains(text(), 'application – $200 ')]
+                                         -> //h1[contains(text(), 'Dummy Ticket Booking')]
+
+
+3. normalize space method:  This method ignore all un-neccessary space in attribute name
+                            ->  //tagname[normalize-space()='value']
+                            -> //button[normalize-space()='Login']
+
+
+######################################################
+Advance XPath Methods:
+
+1. Parent : indentify the parent with the help child element.
+            e.g  -> //tagname[@attribute='value']/parent::tagname[attribute='value']
+                 -> //input[@value='radio_123']/parent::li
+
+2. Ancestor : indentify the grand parent element with the help grand child.
+            e.g  -> //input[@value='radio_123']/ancestor::div[@align="left"]
+
+3. following : indentify all the element which are available below the reference element on webpage/DOM structure
+           e.g.  //input[@id='fromcity']/following::input
+
+4. following-sibling: indentify the sibling element which available below to reference sibling element
+          e.g.  -> //td[text()='Kolkata']//following-sibling::td[text()='5000']
+
+5. preceding : indentify all the element which are available above the reference element on webpage/DOM structure
+           e.g. //input[@id='fromcity']//preceding::input
+
+6. preceding-sibling: indentify the sibling element which available above to reference sibling element
+         e.g.  //td[text()='Kolkata']//preceding-sibling::td
+             -> //td[text()='Pune']//preceding-sibling::td/input[@type='checkbox']
+
+
+            
