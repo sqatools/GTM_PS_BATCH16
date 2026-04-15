@@ -7,9 +7,9 @@ import time
 
 def launch_website_and_verify():
     driver = webdriver.Chrome()
-    driver.get("https://practicetestautomation.com/")
-    driver.find_element(By.ID, "form_first_name_7").send_keys("Ramesh")
-    driver.find_element(By.ID, "form_email_7").send_keys("ramesh@123.com")
+    driver.get("https://sqatools.in/dummy-booking-website/")
+    driver.find_element(By.ID, "fromcity").send_keys("Assam")
+    driver.find_element(By.ID, "destcity").send_keys("Guwahati")
 
     time.sleep(10)
     driver.close()
