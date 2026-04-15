@@ -24,18 +24,18 @@
 # add(20,30)
 
 
-t = (1, 2, 3)
+# t = (1, 2, 3)
 
-# This will raise an error:
-# t[0] = 99  → TypeError!
+# # This will raise an error:
+# # t[0] = 99  → TypeError!
 
-# Workaround: convert to list, edit, convert back
-temp = list(t)
+# # Workaround: convert to list, edit, convert back
+# temp = list(t)
 
-temp[0] = 99
-t = tuple(temp)
-print(t)
+# temp[0] = 99
+# t = tuple(temp)
+# print(t)
 
-# Concatenate to create a new tuple
-t2 = t + (4, 5)
-print(t2)
+# # Concatenate to create a new tuple
+# t2 = t + (4, 5)
+# print(t2)
