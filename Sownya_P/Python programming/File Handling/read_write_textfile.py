@@ -49,6 +49,32 @@ def read_file_with_context_manager(file_path):
         print("is file closed?", file.closed)  # Check if the file is closed after the block  
 
     print("is file closed after the context manager block?", file.closed) 
-    # Check if the file is closed after the block    
+        # Check if the file is closed after the block    
       
-read_file_with_context_manager(file_path='abc_text.txt')
+read_file_with_context_manager(file_path=r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\abc_text.txt")
+
+
+#Read methods 
+# 1. Read with number of characters
+def read_file_with_characters(file_path, num_characters):
+    with open(file_path, 'r') as file:
+        content = file.read(num_characters)
+        print(content)
+
+read_file_with_characters(file_path=r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\write_data.txt", num_characters=20) 
+
+
+## read one line at a time
+def read_file_line_by_line(file_path,lines):
+    with open(file_path, 'r') as file:
+        for i in range(lines):
+            line = file.readline()
+            print(line) 
+read_file_line_by_line(file_path =r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\write_data.txt",lines=1)  
+
+#read all lines into a list
+def read_file_into_list(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        print(lines)
+read_file_into_list(file_path=r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programming\File Handling\write_data.txt")

@@ -1,0 +1,45 @@
+Xpath is selenium locator to identify the element in the webpage. 
+
+It is used to navigate through elements and attributes in an XML document.
+
+In Selenium, we can use Xpath to locate elements on a web page.
+There are two types of Xpath:    
+1. Absolute Xpath: It starts from the root element and follows the hierarchy to locate the element.
+             It is not recommended to use absolute Xpath as it is fragile and can break if there are any changes in the webpage structure.
+2. Relative Xpath: It starts from any element and can be used to locate
+         the element based on its attributes, text, or position. 
+ It is more flexible and less likely to break if there are changes in the webpage structure.
+
+X path methods : 
+
+Text method : used to identify the text value 
+
+Example : //tagname[text()='text value']
+  
+Contains method : used to identify the element based on partial attribute value or a partial text value
+  Partial attribute value : //tagname[contains(@attribute,'attribute value')]
+  partial text value : //tagname[contains(text(),"text value")]
+
+Normalized space method : 
+            this method ignores all unnecessary space in the attribute name 
+        //tagname[normalize-space()="value"]
+
+
+Advance XPath methods : 
+
+1. Parent   - identify with the help of child element 
+     //tagname[@attribute='value']//parent::tagname[@attribute ='value']
+
+2. Ancestor  - identify the grandparent element with the help of grand child 
+   //tagname[@attribute='value']//ancestor::tagname[@attribute='value']
+
+3. following  - identify all the elements which are available below the reference element
+    //tagname[@attribute='value']//following::text
+
+4. following sibling - identify the elements below the reference element under the same parent 
+    //tagname[@attribute='value']//following-sibling::text[@attribute='value']
+5. preceeding -  identify all the elements which are available above the reference element
+    //tagname[@attribute='value']//preceeding::text
+6. Preceeding sibling - identify the elements above the reference element under the same parent 
+    //tagname[@attribute='value']//preecding-sibling::text[@attribute='value']
+
