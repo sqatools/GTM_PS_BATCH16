@@ -14,10 +14,11 @@ def launch_website_and_verify():
 
 def selenium_locators():
     # By name
-    driver.find_elements(By.XPATH,"(//input[@id='firstname'])").send_keys("Viaan")
+    driver.find_element(By.XPATH,"(//input[@id='firstname'])[1]").send_keys("Viaan")
     
-    driver.find_elements(By.XPATH,"(//input[@id='firstname'][2])").send_keys("Kumar")
+    driver.find_element(By.XPATH,"(//input[@id='firstname'])[2]").send_keys("Dahake")
     time.sleep(10)
 
+    driver.find_element(By.XPATH,"(//input[@id='firstname'])[3]").send_keys("
 launch_website_and_verify()
 selenium_locators()
