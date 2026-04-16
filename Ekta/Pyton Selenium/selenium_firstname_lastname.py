@@ -12,8 +12,8 @@ def launch_website_and_verify():
     assert driver.current_url=="https://sqatools.in/dummy-booking-website/"
 
 def selenium_locators():
-    driver.find_element(By.XPATH,"//input[@id='firstname'][1]").send_keys("Ekta")
-    driver.find_element(By.XPATH,"//input[@id='firstname'][2]").send_keys("Gund")
+    driver.find_element(By.XPATH,"(//input[@id='firstname'])[1]").send_keys("Ekta")
+    driver.find_element(By.XPATH,"(//input[@id='firstname'])[2]").send_keys("Gund")
     time.sleep(30)
 
 launch_website_and_verify()
