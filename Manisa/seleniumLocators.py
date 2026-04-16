@@ -1,22 +1,26 @@
+#date -14th april
+
+from email.mime import text
+from os import link
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-# global variable to hold the driver instance
-driver = None 
-url = "https://sqatools.in/dummy-booking-website/"
+driver = None
 
 def launch_website_and_verify():
     global driver
     driver = webdriver.Chrome()
-    driver.get(url)
+    driver.get("https://sqatools.in/dummy-booking-website/")
     driver.maximize_window()
-    driver.implicitly_wait(10)
-    # verify the correct page is loaded.
-    print("Current URL:", driver.current_url)
-    assert driver.current_url == url, f"Expected URL: {url}, but got: {driver.current_url}"
+    driver.implicitly_wait(15)
+    
+     # verify the correct page is loaded.
+    assert driver.current_url == "https://sqatools.in/dummy-booking-website/"
 
-# selenium locators
+#selenium locators - 7 locators
+
 """
 ID: ByType = "id"
 XPATH: ByType = "xpath"
@@ -27,8 +31,9 @@ TAG_NAME: ByType = "tag name"
 CLASS_NAME: ByType = "class name"
 CSS_SELECTOR: ByType = "css selector"
 """
-def selenium_locators():
 
+   
+def selenium_locators():
     # ID locator
     driver.find_element(By.ID, "fromcity").send_keys("Mumbai")
     driver.find_element(By.ID, "destcity").send_keys("Pune")
@@ -40,33 +45,39 @@ def selenium_locators():
     # Class Name locator
     heading = driver.find_element(By.CLASS_NAME, "entry-title").text
     print("Heading of the page is:", heading)
+    time.sleep(5)
 
     # link text locator
     driver.find_element(By.LINK_TEXT, "Home").click()
     time.sleep(5)
 
     # partial link text locator
-    driver.find_element(By.PARTIAL_LINK_TEXT, "String Programs").click()
-    time.sleep(5)
+    driver.find_element(By.PARTIAL_LINK_TEXT, "Basic Programs").click()
+    time.sleep(10)
 
-# selenium methods to find elements:
+launch_website_and_verify()
+#selenium_locators()
 
+# selenium methods to find multiple elements:
 def selenium_get_elements():
     # get list of elements using find_elements method
     username_fields = driver.find_elements(By.ID, "firstname")
-    username_fields[0].send_keys("Rahul")
-    username_fields[1].send_keys("Kumar")
+    username_fields[0].send_keys("manisa")
+    username_fields[1].send_keys("sarangi")
     time.sleep(5)
 
-    # get all links on the page
+    #dob_fields = driver.find_elements(By.ID, "Date of Birth")
+    dob_field = driver.find_element(By.XPATH, "//span[contains(text(), 'Date of birth')]/following::input[1]")
+    dob_field.send_keys("01/01/1990")
+    time.sleep(5)
+#get all the links on the page
     list_of_links = driver.find_elements(By.TAG_NAME, "a")
-    print("All links on the page:", len(list_of_links))
+    print("Total number of links on the page:", len(list_of_links))
     for link in list_of_links:
+        #print(link.text)
         print("Link Text:", link.text, " - URL:", link.get_attribute("href"))
-    
-launch_website_and_verify()
+
 selenium_get_elements()
 
 
-#selenium_locators()
 
