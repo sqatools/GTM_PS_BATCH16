@@ -43,3 +43,14 @@ Advance XPath methods :
 6. Preceeding sibling - identify the elements above the reference element under the same parent 
     //tagname[@attribute='value']//preecding-sibling::text[@attribute='value']
 
+
+
+CSS Locators : 
+when we have  below ones we will identify 
+
+1. ID : #IDValue 
+
+2. Class name : tagname.classname
+
+3. By attribute : tagname[attribute='value']
+
