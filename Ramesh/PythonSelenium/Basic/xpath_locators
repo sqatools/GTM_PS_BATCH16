@@ -1,0 +1,76 @@
+Xpath : Xpath is selenium locator to identify any element with the help html DOM.
+
+1. Absolute Xpath: Follow entire dom structure to identify the element.
+        e.g. /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+
+
+2. Relative Xpath: Relative xpath identify the element with the help of element attribute.
+        e.g. //tagname[@attribute='value'] | //*[@attribute='value']
+         ->  //input[@placeholder="Username"]  |  //*[@placeholder="Username"]
+
+
+
+         // If multiple elements are matching with the same property, than we use indexing
+            e.g. -> (//input[@id="firstname"])[1]
+
+
+
+BASIC XPath Methods:
+
+1. Text Method.  : identify the element with the help elements Text
+                    e.g.  //tagname[text()='text value']
+                    -> //td[text()='Pune']
+                    -> //a[text()='Tutorials']
+                    -> //td[text()='6004']
+
+
+2. Contains Method. : identify the element with PARTIAL atribute value or PARTIAL text value.
+
+                i). Partial Atribute value : //tagname[contains(@attribute, 'attribute value')]
+
+                                             -> //input[contains(@id, 't_address1')]
+
+                ii). Partial Text value : //tagname[contains(text(), 'text value)]
+                                            -> //span[contains(text(), ' application – $200')] 
+                                            -> //h1[contains(text(), 'Dummy Booking')]
+
+
+
+3. normalize space methode:  this method ignores all unnecessary space in atribute name.
+                            -> //tagname[normalize-space()='value']
+                            -> //button[normalize-space()='Login']
+
+
+
+################################################################
+
+Advance Xpath Method:
+
+1. Parent : identify the partent with the help chid element.
+            e.g.  //tagname[@attribute='value']/parent::tagname[attribute='value']
+            e.g.  //input[@value='radio_123']/parent::li
+
+
+2. Ancestor : identify the grand parent with the help of grand child.
+            e.g -> //input[@value='radio_123']/ancestor::div[@align="left"]
+
+
+3. following : identify all the elementwhich are available below the referance element on webpage/DOM structure
+            e.g -> //input[@id='fromcity']//following::input
+
+
+
+4. following-sibling : identity the sibling elements which is available below to referance sibling element
+
+                e.g -> //td[text()='Kolkata']//following-sibling::td[text()='5000']
+
+
+
+5. preceding : identify all the elementwhich are available below the referance element on webpage/DOM structure
+                e.g -> //input[@id='fromcity']//preceding::input
+
+
+
+6. preceding-sibling : identity the sibling elements which is available above to referance sibling element
+
+                e.g -> //td[text()='Kolkata']//preceding-sibling::td
