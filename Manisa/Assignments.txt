@@ -1,7 +1,7 @@
 1. Automate dummy website except dropdown elements.
 https://sqatools.in/dummy-booking-website/
 FileName : seleniumLocators.py
-Status: in progress(all fields not done some are in progress)
+Status: in progress(Radio buttons are done , Checkbox and some are in progress)
 
 2. Get handon on all locators we have convered 
 (ID, NAME, CLASS_NAME, LINK_TEXT, PARTIAL LINK_TEXT, TAGNAME)
@@ -10,5 +10,5 @@ FileName: seleniumLocators.py
 Status: done
 
 3. Take atleast one example of each XPath and use it selenium script from XPATH guide.
-Filename:
+Filename:seleniumLocators.py (as of now) and seleniumLocatorsOrangeHRM.py(cw)
 Status: in progress
