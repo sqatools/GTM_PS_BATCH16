@@ -56,4 +56,17 @@ Advance XPath Methods:
              -> //td[text()='Pune']//preceding-sibling::td/input[@type='checkbox']
 
 
+########################################
+# CSS selector
+
+1. ID : #IDvalue
+        #fromcity
+
+2. CLASS : tagname.classname
+          -> header.entry-header
+
+3. Attribute :  tagname[attribute='value']
+              -> div[align="left"]
+
+
             
