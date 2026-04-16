@@ -74,3 +74,17 @@ Advance Xpath Method:
 6. preceding-sibling : identity the sibling elements which is available above to referance sibling element
 
                 e.g -> //td[text()='Kolkata']//preceding-sibling::td
+
+
+#################################################################
+
+# CSS selector
+
+1. ID : #IDvalue
+        #fromcity
+
+2. CLASS : .classname 
+            -> header.entry-header
+
+3. Attribute : tagname[attribute='value']
+                -> div[align="left"]
