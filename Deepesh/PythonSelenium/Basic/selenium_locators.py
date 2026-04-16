@@ -65,8 +65,8 @@ def selenium_get_elements():
         print("Link Text:", link.text, " - URL:", link.get_attribute("href"))
     
 launch_website_and_verify()
-# selenium_get_elements()
+selenium_get_elements()
 
 
-selenium_locators()
+#selenium_locators()
 
