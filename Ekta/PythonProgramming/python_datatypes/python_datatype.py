@@ -77,4 +77,5 @@ b=200
 print(a==b)
 
 
-
+x = "Python"
+print(x[-2])
