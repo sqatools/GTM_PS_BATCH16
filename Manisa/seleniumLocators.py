@@ -70,12 +70,28 @@ def selenium_get_elements():
     dob_field = driver.find_element(By.XPATH, "//span[contains(text(), 'Date of birth')]/following::input[1]")
     dob_field.send_keys("01/01/1990")
     time.sleep(5)
-#get all the links on the page
-    list_of_links = driver.find_elements(By.TAG_NAME, "a")
-    print("Total number of links on the page:", len(list_of_links))
-    for link in list_of_links:
-        #print(link.text)
-        print("Link Text:", link.text, " - URL:", link.get_attribute("href"))
+    
+    #sex_fields = driver.find_elements(By.ID, "female") - radio button
+    sex = driver.find_element(By.ID, 'female')
+    sex.click()
+    # Click the text "male" using xpath
+    #driver.find_element(By.XPATH, "//span[text()='male']").click()//wrong xpath
+
+    #traveldetails - radio button one way / two way
+    traveldetails = driver.find_element(By.ID, "oneway").click()
+
+    element=driver.find_element(By.XPATH,"//td[text()='Hyderabad']")
+    print("element highlighted ",element.text)
+    
+
+    time.sleep(5)
+
+    #get all the links on the page
+    #list_of_links = driver.find_elements(By.TAG_NAME, "a")
+    #print("Total number of links on the page:", len(list_of_links))
+    #for link in list_of_links:
+    #    print(link.text)
+    #    #print("Link Text:", link.text, " - URL:", link.get_attribute("href"))
 
 selenium_get_elements()
 
