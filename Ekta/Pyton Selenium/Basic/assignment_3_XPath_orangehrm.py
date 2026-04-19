@@ -14,9 +14,12 @@ def launch_website_and_verify():
 def xpath_locators():
     driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys("Admin")
     driver.find_element(By.XPATH,"//input[@type='password']").send_keys("admin123")
-    driver.find_element(By.XPATH,"//button[@type='submit']").click()
+    #normalize space metod to ignore leading and trailing spaces and multiple spaces between words  
+    driver.find_element(By.XPATH,"//button[normalize-space()='Login']").click()
     #driver.find_element(By.XPATH,"//p[text()='Apply Leave']").click()
-    driver.find_element(By.XPATH,"")
+    #advance xpath methods -->1.Parent 
+    #driver.find_element(By.XPATH,"//input[@value='radio_123']/parent::li")
+    driver.find_element(By.XPATH,"//input[@value='radio_123']/ancestor::li").click()
     time.sleep(10)
 
 
