@@ -16,3 +16,7 @@ Status: In progress
 4.Pytest framework understanding with execution 
 Filename : PytestFrameWork
 Status: Execution done. I have few querries 
+
+5. Create a class with name and Employee, which three parameter
+  ->  emp_name, emp_id, emp_salary
+
