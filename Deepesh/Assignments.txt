@@ -12,3 +12,12 @@ Status:
 3. Take atleast one example of each XPath and use it selenium script from XPATH guide.
 Filename:
 Status: 
+
+
+4. Create all files for pytest with different options.
+->  test function
+->  test function with marker with ADN/OR condition.
+-> create fixture file and access the fiture in the test file.
+
+5. Create a class with name and Employee, which three parameter
+  ->  emp_name, emp_id, emp_salary

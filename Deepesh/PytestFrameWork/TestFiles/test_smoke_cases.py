@@ -1,14 +1,14 @@
 import pytest
 
 @pytest.mark.smoke
-def test_smoke_case1():
+def test_smoke_case1(setup):
     print("This is smoke case 1")
     n1 = 10
     n2 = 20
     assert n1 + n2 == 30, "Addition is incorrect"
 
 @pytest.mark.smoke
-def test_smoke_case2():
+def test_smoke_case2(setup):
     print("This is smoke case 2")
     s1 = "Hello"
     s2 = "World"
