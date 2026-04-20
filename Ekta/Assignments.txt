@@ -7,16 +7,20 @@ Status: In progress
 (ID, NAME, CLASS_NAME, LINK_TEXT, PARTIAL LINK_TEXT, TAGNAME)
 - get list of elements using find_elements method.
 FileName: assignment_2_selenium_locators
-Status: Done 
+Status: Completed  
 
 3. Take atleast one example of each XPath and use it selenium script from XPATH guide.
 Filename: assignment_3_Xpath_dummybooking, assignment_3_XPath_orangehrm
 Status: In progress
 
-4.Pytest framework understanding with execution 
-Filename : PytestFrameWork
-Status: Execution done. I have few querries 
+4. Create all files for pytest with different options.
+->  test function
+->  test function with marker with ADN/OR condition.
+-> create fixture file and access the fiture in the test file.
+FileName: PytestFrameWork
+Status: Completed
 
 5. Create a class with name and Employee, which three parameter
   ->  emp_name, emp_id, emp_salary
-
+  FileName: Assignment_5_EmployeeClass
+  Status:Completed 
