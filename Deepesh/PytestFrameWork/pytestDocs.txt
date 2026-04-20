@@ -30,4 +30,10 @@
 8. Command to execute specific test cases with name
   -> python -m pytest -v -k "test_smoke_case5" .\TestFiles\test_smoke_cases.py --html=report.html
 
+9. Command to execute the test cases, and show print statement output.
+  -> python -m pytest -v -s  .\test_selenium_with_fixture.py
 
+  -s : to show print statment on console.
+  -v:  to show the verbose result in console.
+       -> to detailed information about the test cases . 
+       -> like, testname, percentage of each test case.

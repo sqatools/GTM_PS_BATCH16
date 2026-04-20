@@ -11,8 +11,8 @@ def get_driver():
     yield driver
 
 
-pytest.fixture(scope="function", autouse=True)
+@pytest.fixture(scope="function")
 def setup():
-    print("---Test setup initiate--")
+    print("\n---Test setup initiate--")
     yield
-    print("---Test Teardown initiate--")
+    print("\n---Test Teardown initiate--")
