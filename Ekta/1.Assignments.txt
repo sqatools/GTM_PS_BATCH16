@@ -1,0 +1,26 @@
+1. Automate dummy website except dropdown elements.
+https://sqatools.in/dummy-booking-website/
+FileName : assignment_1_dummy_site
+Status: In progress
+
+2. Get handon on all locators we have convered 
+(ID, NAME, CLASS_NAME, LINK_TEXT, PARTIAL LINK_TEXT, TAGNAME)
+- get list of elements using find_elements method.
+FileName: assignment_2_selenium_locators
+Status: Completed  
+
+3. Take atleast one example of each XPath and use it selenium script from XPATH guide.
+Filename: assignment_3_Xpath_dummybooking, assignment_3_XPath_orangehrm
+Status: In progress
+
+4. Create all files for pytest with different options.
+->  test function
+->  test function with marker with ADN/OR condition.
+-> create fixture file and access the fiture in the test file.
+FileName: PytestFrameWork
+Status: Completed
+
+5. Create a class with name and Employee, which three parameter
+  ->  emp_name, emp_id, emp_salary
+  FileName: Assignment_5_EmployeeClass
+  Status:Completed 

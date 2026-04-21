@@ -11,7 +11,7 @@ text_file_path = r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Python programmi
 
 read_file(file_path=text_file_path)
 
-read_file(file_path= r"C:\AutomationProject\GTM_PS_BATCH16\Sownya_P\Demo File.txt.txt")
+
 ##-- if i want to read the file from specific directory
 
 
