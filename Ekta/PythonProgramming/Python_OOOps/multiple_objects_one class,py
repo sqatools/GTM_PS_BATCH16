@@ -1,0 +1,13 @@
+class Myclas:
+ def display(self):
+    print("Good Morning")
+
+obj=Myclas()   #created object of the class
+obj.display()   #accessed method using object of the class
+
+obj1=Myclas()   #created another object of the class
+obj1.display()   #accessed method using another object of the class
+
+Myclas.display(obj)   #without giving name we use class name and method name and pass the object name as argument to access the method of the class. This is also known as calling method using class name. 
+# created multiple objects with the same class and accessed the method using those objects. 
+#obj, obj1 and obj2 are three different objects of the same class Myclas.these three objects are having different memory locations.
