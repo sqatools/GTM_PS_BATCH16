@@ -42,11 +42,33 @@ class Car:
         print("Compnay Name :", self.CompanyName)
 
 
+    @classmethod
+    def showCompanyName(cls):
+        print("Company Name :", cls.CompanyName)
+
+
+    @staticmethod
+    def get_factorial(num):
+        fact = 1
+        for i in range(num, 0, -1):
+            fact = fact*i
+
+        return fact
+
+
+    
+
+
 # create object of the class
 obj = Car("Harrier", "25 Lakh", 2026)
 obj.ShowCarName()
 print(obj.CompanyName)
 obj.ShowCarDetails()
+##Car.ShowCarDetails(obj)
+
+# access class method and static method with help of class name.
+Car.showCompanyName()
+print(Car.get_factorial(5))
         
 
 
