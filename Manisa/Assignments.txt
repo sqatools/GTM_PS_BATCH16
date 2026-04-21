@@ -12,3 +12,15 @@ Status: done
 3. Take atleast one example of each XPath and use it selenium script from XPATH guide.
 Filename:seleniumLocators.py (as of now) and seleniumLocatorsOrangeHRM.py(cw)
 Status: in progress
+
+
+4. Create all files for pytest with different options.
+->  test function
+->  test function with marker with ADN/OR condition.
+-> create fixture file and access the fiture in the test file.
+FileName : cw practice
+Status:not done
+5. Create a class with name and Employee, which three parameter
+  ->  emp_name, emp_id, emp_salary
+  Filename:PythonClassObject.py
+  Status:Done
