@@ -10,6 +10,10 @@ method : when define any function inside the class then become method.
 """
 
 class Car :
+    # its called class variable
+    companyName = "TATA"
+
+
     def __init__(self, car_name, car_price, car_model):
         print("-----Welcome to car Class-----")
 
@@ -30,10 +34,12 @@ class Car :
 
 
     def ShowCarDetails(self):
-        self.CarName()
-        self.CarPrice()
-        self.CarModel()
+        self.ShowCarName()
+        self.ShowCarPrice()
+        self.ShowCarModel()
 
 
 obj = Car("Harrier", "23 lacs", 2026)
 obj.ShowCarName()
+print(obj.companyName)
+obj.ShowCarDetails()
