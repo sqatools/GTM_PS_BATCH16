@@ -19,7 +19,7 @@ def xpath_locators():
     #driver.find_element(By.XPATH,"//p[text()='Apply Leave']").click()
     #advance xpath methods -->1.Parent 
     #driver.find_element(By.XPATH,"//input[@value='radio_123']/parent::li")
-    driver.find_element(By.XPATH,"//input[@value='radio_123']/ancestor::li").click()
+    
     time.sleep(10)
 
 
