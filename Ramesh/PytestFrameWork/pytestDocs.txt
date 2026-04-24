@@ -1,0 +1,44 @@
+1. Install pytest using below command
+        -> pip install pytest
+
+2. create test file with test_prefix   e.g. test_smoke_case.py
+
+3. create test function with test_prefix name  e.g. test_addition(), test_subtraction().
+
+4. Execute the test cases with the help of command
+        -> puthon -m pytest -v test_file_name
+
+5. Execute the test cases with specific marker
+        -> python -m pytest -v -m "smoke" .\TestFile\test_smoke_cases.py
+                (but when i run with this commandit comes error rather than i have to write this command
+                python -m pytest -v -m "smoke" test_smoke_cases.py than the output is right)
+
+        # add condition with marker 
+        -> python -m pytest -v -m "smoke and sanity" .\TestFile\test_smoke_cases.py
+
+
+
+
+
+6. generate HTML Report
+        -> install pytest package
+        -> pip install pytest-html
+
+
+7. Execute test cases with html report on local directory.
+        -> python -m pytest -v test_smoke_cases.py --html=report.html
+        -> It will create report.html file in local directory, that we can open in browser
+
+
+8. command to Execute specific test cases with the name 
+        -> python -m pytest -v -k "test_smoke_case5"  test_smoke_cases.py --html=report.htm
+
+9. command to Execute the test cases, and show print statement output.
+        -> python -m pytest -v -s .\test_selenium_with_fixture.py
+
+        -s : to show print statement on console.
+        -v : to show the verbose result in console.
+                -> to detailed information about the test cases.
+                -> like, testname, percentage of each test cases.
+
+
