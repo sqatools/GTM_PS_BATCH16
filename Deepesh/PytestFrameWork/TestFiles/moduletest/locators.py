@@ -8,3 +8,8 @@ class DummyLocators:
     ReturnDate = (By.NAME, "returndate")
 
     PageHeading = (By.CLASS_NAME, "entry-title")
+
+    male_radio_btn = (By.ID, "male")
+    passenger_dropdown = (By.ID, "admorepass")
+
+    contry_dropdown = (By.ID, "billing_country")
