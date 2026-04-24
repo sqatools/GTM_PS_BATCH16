@@ -2,7 +2,9 @@
 # 1. method overriding -> when parent and child clas have method with same, and child class method will override parent
 
 
-# 2. Method : one class have 2 method with the same name and different 
+# 2. Method overloading : one class have 2 method with the same name and different parameter, then it is called method overloading
+#                    -> method overloading is not support in python.
+                    # -> python only consider the latest defined method
 
 class Father:
     def __init__(self, f_name, f_car):
