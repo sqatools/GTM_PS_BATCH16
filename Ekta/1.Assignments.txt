@@ -24,3 +24,12 @@ Status: Completed
   ->  emp_name, emp_id, emp_salary
   FileName: Assignment_5_EmployeeClass
   Status:Completed 
+
+6. Automate remaining methods from 'test_selenium_with_class_and_fixture' class.
+  ---> Dates - Done 
+  ---> Headings - Done 
+  --->URL and Title - In progress
+  --->Gender Verify
+  --->No of passangers 
+  FileName : AutomationFramework
+  Status : In Progress for remaining methods
