@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-
-
 def test_enter_username(get_driver):
     driver = get_driver
     driver.find_element(By.ID, "fromcity").send_keys("Assam")
