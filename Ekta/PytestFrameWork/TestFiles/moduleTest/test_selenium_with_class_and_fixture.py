@@ -18,6 +18,7 @@ class TestDummyWebsite:
        #self.driver.find_element(By.ID, "destcity").send_keys("Kohapur")
        self.sb.enter_text(self.dl.fromCityField,"Gadhinglaj")
        self.sb.enter_text(self.dl.DestCityField,"Kolhapur")
+       
 
     def test_enter_dates(self):
         #self.driver.find_element(By.NAME, "departdate").send_keys("01/05/2026")
