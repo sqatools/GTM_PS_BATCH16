@@ -17,4 +17,13 @@ class DummyPage(SeleniumBase): # WE NEED TO INHERIT THE SELENIUM BASE CLASS TO A
     def get_page_heading(self):
         return self.get_element_text(self.dl.PageHeading)
 
+    def select_male_radio_btn(self):
+        self.click_element(self.dl.male_radio_btn)          
+
+    def select_passenger_count(self, count):
+        self.select_dropdown_value(self.dl.passenger_dropdown, count)       
+    
+    def select_country(self, country_name):
+        self.select_dropdown_value(self.dl.contry_dropdown, country_name)   
+
     

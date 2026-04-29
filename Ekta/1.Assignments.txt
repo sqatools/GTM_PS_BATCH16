@@ -28,8 +28,8 @@ Status: Completed
 6. Automate remaining methods from 'test_selenium_with_class_and_fixture' class.
   ---> Dates - Done 
   ---> Headings - Done 
-  --->URL and Title - In progress
-  --->Gender Verify
-  --->No of passangers 
+  ---> Gender Verify - Done 
+  ---> Select country - Done 
+  ---->No of passangers -- In Progress
   FileName : AutomationFramework
   Status : In Progress for remaining methods
