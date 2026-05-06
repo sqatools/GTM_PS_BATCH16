@@ -1,0 +1,9 @@
+2026-05-06 09:03:15 [INFO] (dummy_page_class.py:10) Execute Method : enter_source_and_destination
+2026-05-06 09:03:15 [INFO] (selenium_base.py:26) entering text:Chennai in the locator : ('id', 'fromcity')
+2026-05-06 09:03:15 [INFO] (selenium_base.py:17) getting element with locator : ('id', 'fromcity')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:26) entering text:Bangalore in the locator : ('id', 'destcity')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:17) getting element with locator : ('id', 'destcity')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:17) getting element with locator : ('id', 'admorepass')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:21) clicking on element with locator : ('id', 'female')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:17) getting element with locator : ('id', 'female')
+2026-05-06 09:03:16 [INFO] (selenium_base.py:17) getting element with locator : ('id', 'billing_country')
