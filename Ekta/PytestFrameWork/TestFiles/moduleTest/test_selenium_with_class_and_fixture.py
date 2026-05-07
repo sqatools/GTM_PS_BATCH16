@@ -9,7 +9,7 @@ from .locators import DummyLocators
 class TestDummyWebsite:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
-        self.sb=seleniumbase(self.driver)
+        self.sb=seleniumbase(self.driver) # creating object of selenium base class to access all the methods of selenium base class
         self.dl=DummyLocators()
         print("Test setup initiated")
 
