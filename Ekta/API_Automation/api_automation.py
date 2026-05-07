@@ -83,4 +83,21 @@ def update_existing_object():
     print(response.status_code)
 
 
-update_existing_object()
+#update_existing_object()
+
+
+def delete_existing_object():
+    # You must append the specific ID of the object you want to delete
+    url = "https://api.restful-api.dev/objects/5"
+    
+ 
+    headers = {"Content-Type": "application/json"}
+    
+   
+    response = requests.request("DELETE", url=url, headers=headers)
+    
+    print(response.content)    # normal string content (often a success message)
+    print(response.json())     # converting raw data into Json format
+    print(response.status_code) # variable which holds the status code (usually 200 or 204)
+    
+delete_existing_object()
