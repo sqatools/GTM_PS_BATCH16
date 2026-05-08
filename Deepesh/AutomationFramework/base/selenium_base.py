@@ -1,23 +1,29 @@
-from selenium.webdriver.common.by import By
+import logging
 import time
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.select import Select
+
 
 
 class SeleniumBase:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 15)
+        self.log = logging.getLogger(__name__)
 
     def get_element(self, locator):
+        self.log.info(f"getting element with locator : {locator}")
         return self.wait.until(ec.presence_of_element_located(locator))
     
     def click_element(self, locator):
+        self.log.info(f"clicking on element with locator : {locator}")
         element = self.get_element(locator)
         element.click()
 
     def enter_text(self, locator, value):
+        self.log.info(f"entering text:{value} in the locator : {locator}")
         element = self.get_element(locator)
         element.send_keys(value)
 
