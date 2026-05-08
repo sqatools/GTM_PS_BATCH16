@@ -1,10 +1,15 @@
 import pytest 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+headless = True
 
 @pytest.fixture(scope="class")
 def get_driver_class(request):
     print("Launching Browser")
-    driver = webdriver.Chrome()
+    opt = Options()
+    opt.add_argument("--headless")
+    driver = webdriver.Chrome(options=opt)
     driver.get("https://sqatools.in/dummy-booking-website/")
     driver.maximize_window()
     driver.implicitly_wait(10)
