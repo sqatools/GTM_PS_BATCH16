@@ -3,7 +3,7 @@ https://sqatools.in/dummy-booking-website/
 FileName : 
 Status: 
 
-2. Get handon on all locators we have convered 
+2. Get hand on on all locators we have convered 
 (ID, NAME, CLASS_NAME, LINK_TEXT, PARTIAL LINK_TEXT, TAGNAME)
 - get list of elements using find_elements method.
 FileName: 
@@ -21,3 +21,9 @@ Status:
 
 5. Create a class with name and Employee, which three parameter
   ->  emp_name, emp_id, emp_salary
+
+6. Automation dummywebsite fields with Json file
+  -> https://sqatools.in/dummy-booking-website/
+
+7. Automation Practice page fields with Json file.
+  -> https://sqatools.in/dummy-booking-website/
