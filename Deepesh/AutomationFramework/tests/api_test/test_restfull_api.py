@@ -16,3 +16,7 @@ class TestRestFullAPI:
         response = self.obj.get_one_object_details(7)
         assert response.status_code == 200
 
+    def test_get_all_users_details(self):
+        response = self.obj.get_All_users()
+        assert response.status_code == 200
+

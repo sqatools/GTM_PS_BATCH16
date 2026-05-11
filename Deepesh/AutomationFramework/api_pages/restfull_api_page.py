@@ -11,4 +11,10 @@ class RestFullAPI(BaseAPI):
         new_url = f"{common_url}/{object_id}"
         response = self.get_method(url=new_url)
         return response
+    
+
+    def get_All_users(self):
+        response = self.get_method(get_all_users_url, header=go_rest_headers)
+        return response
+        
 
