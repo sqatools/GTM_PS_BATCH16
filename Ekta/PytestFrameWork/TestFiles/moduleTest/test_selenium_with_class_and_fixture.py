@@ -9,7 +9,7 @@ from .locators import DummyLocators
 class TestDummyWebsite:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
-        self.sb=seleniumbase(self.driver)
+        self.sb=seleniumbase(self.driver) # creating object of selenium base class to access all the methods of selenium base class
         self.dl=DummyLocators()
         print("Test setup initiated")
 
@@ -18,6 +18,7 @@ class TestDummyWebsite:
        #self.driver.find_element(By.ID, "destcity").send_keys("Kohapur")
        self.sb.enter_text(self.dl.fromCityField,"Gadhinglaj")
        self.sb.enter_text(self.dl.DestCityField,"Kolhapur")
+       
 
     def test_enter_dates(self):
         #self.driver.find_element(By.NAME, "departdate").send_keys("01/05/2026")
