@@ -1,8 +1,15 @@
-from selenium.webdriver.common.by import By
+#from selenium.webdriver.common.by import By
+#import time
+#from selenium.webdriver.support.wait import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as ec
+#Expected Conditions are a set of predefined rules that tell Selenium exactly what state an element needs to be in before the code moves to the next step.
+#from selenium.webdriver.support.select import Select
+
+import logging
 import time
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-#Expected Conditions are a set of predefined rules that tell Selenium exactly what state an element needs to be in before the code moves to the next step.
 from selenium.webdriver.support.select import Select
 
 
