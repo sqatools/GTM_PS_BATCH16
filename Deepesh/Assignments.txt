@@ -21,3 +21,16 @@ Status:
 
 5. Create a class with name and Employee, which three parameter
   ->  emp_name, emp_id, emp_salary
+
+6. Automation dummy website fields with Json file
+https://sqatools.in/dummy-booking-website/
+
+7. Automation Practice page fields with json file.
+https://sqatools.in/automation-practice-page/
+
+
+8. Complete API Automation with Page Object Model
+Reference API Website:
+-> https://restful-api.dev/
+-> https://gorest.co.in/
+

@@ -35,8 +35,8 @@ def get_all_objects():
 #get_all_objects()
 
 
-def get_specific_objects():
-    url = "https://api.restful-api.dev/objects/7"
+def get_specific_objects(object_id):
+    url = f"https://api.restful-api.dev/objects/{object_id}"
     request_data = {}
     headers = {}
     response = requests.request("GET", url=url, headers=headers, data=request_data)
@@ -45,7 +45,7 @@ def get_specific_objects():
     print(response.status_code)
 
 
-get_specific_objects()
+#get_specific_objects()
 
 
 def create_new_object():
@@ -64,5 +64,61 @@ def create_new_object():
     print(response.content)
     print(response.json())
     print(response.status_code)
+    new_id = response.json()['id']
+    return new_id
 
-create_new_object()
+new_id = create_new_object()
+print("New ID :", new_id)
+
+
+
+
+def delete_entry(new_id):
+    url = f"https://api.restful-api.dev/objects/{new_id}"
+    response = requests.request("DELETE", url)
+    print(response.json())
+    print(response.status_code)
+
+#delete_entry(new_id)
+get_specific_objects(new_id)
+
+
+def update_new_object(new_id):
+    url = f"https://api.restful-api.dev/objects/{new_id}"
+    request_data = {
+        "name": "Apple MacBook Pro 250",
+        "data": {
+            "year": 200,
+            "price": 1849.99,
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB"
+        }
+        }
+    headers = {"Content-Type" : "application/json"}
+    response = requests.request("PUT", url=url, headers=headers, data=json.dumps(request_data))
+    print(response.json())
+    print(response.status_code)
+
+
+def patch_new_object(new_id):
+    url = f"https://api.restful-api.dev/objects/{new_id}"
+    request_data = {
+        "data": {
+            "price": 5000.99,
+            }
+        }
+    headers = {"Content-Type" : "application/json"}
+    response = requests.request("PATCH", url=url, headers=headers, data=json.dumps(request_data))
+    print(response.json())
+    print(response.status_code)
+
+
+# print("_"*50)
+# obj_id = create_new_object()
+# print("_"*50)
+# update_new_object(obj_id)
+# print("_"*50)
+# get_specific_objects(new_id)
+# print("_"*50)
+# patch_new_object(new_id)
+
