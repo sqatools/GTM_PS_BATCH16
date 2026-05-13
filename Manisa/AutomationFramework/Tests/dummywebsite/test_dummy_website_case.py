@@ -3,14 +3,14 @@ import time
 from page_objects.dummy_page.dummy_page_class import DummyPage
 
 
-@pytest.mark.usefixtures("get_driver_class")
 
 #This tells Pytest to go find the get_driver_class fixture you wrote in your conftest.py.
-
+@pytest.mark.usefixtures("get_driver_class")
 class TestDummyWebsite:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
         self.dp = DummyPage(self.driver)
+
         '''Because that fixture was scoped to "class", the browser opens once when this class starts. 
         It also attaches the driver to self.driver, making it available to everything inside this class.'''
 
