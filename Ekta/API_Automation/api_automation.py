@@ -19,6 +19,7 @@ status code
 import requests
 import json
 def get_all_objects():
+    requests.get("https://api.restful-api.dev/objects")
     url="https://api.restful-api.dev/objects"
     requests_data={}      
     headers={}   
@@ -62,33 +63,39 @@ def create_new_object():
     print(response.content)    # normal string content 
     print(response.json()) # converting raw data into Json format so we can read it in dictionary format and perform operations on it.
     print(response.status_code) # its variable which hold the status code.
+    new_id=response.json()["id"]
+    return new_id
+   
+   
     
-#create_new_object()
+new_id=create_new_object()
+print("ID of newly created object is-->",new_id)
 
-def update_existing_object():
-    url="https://api.restful-api.dev/objects/1"
+
+def update_existing_object(new_id):
+    url=f"https://api.restful-api.dev/objects/{new_id}"
     requests_data={
   "name": "Google Pixel 6 Pro",
   "data": {
-    "year": 2025,
-    "price": "3500 USD 2025 model",
-    "CPU model": "Intel Core i9 2025 model",
-    "Hard disk size": "1 TB 2025 model"
+    "year": 2030,
+    "price": "3500 USD 2030 model",
+    "CPU model": "Intel Core i9 2030 model",
+    "Hard disk size": "1 TB 2030 model"
   }
 }      
     headers={"Content-Type": "application/json"}
     response=requests.request("PUT",url=url,headers=headers,data=json.dumps(requests_data))
-    print(response.content)    # normal string content 
+    print("Updating existing details with PUT method --> It update all details ")
     print(response.json()) # converting raw data into Json format so we can read it in dictionary format and perform operations on it.
     print(response.status_code)
 
 
-#update_existing_object()
+update_existing_object(new_id)
 
 
-def delete_existing_object():
+def delete_existing_object(new_id):
     # You must append the specific ID of the object you want to delete
-    url = "https://api.restful-api.dev/objects/5"
+    url = f"https://api.restful-api.dev/objects/{new_id}"
     
  
     headers = {"Content-Type": "application/json"}
@@ -96,8 +103,46 @@ def delete_existing_object():
    
     response = requests.request("DELETE", url=url, headers=headers)
     
-    print(response.content)    # normal string content (often a success message)
     print(response.json())     # converting raw data into Json format
     print(response.status_code) # variable which holds the status code (usually 200 or 204)
-    
-delete_existing_object()
+
+
+#delete_existing_object(new_id)
+
+
+
+def get_specific_objects(new_id):
+    url = f"https://api.restful-api.dev/objects/{new_id}"
+    request_data = {}
+    headers = {}
+    response = requests.request("GET", url=url, headers=headers, data=request_data)
+    print(response.content)
+    print(response.json())
+    print(response.status_code)
+
+
+#get_specific_objects(new_id)
+
+
+def update_existing_object(new_id):
+    url=f"https://api.restful-api.dev/objects/{new_id}"
+    requests_data={
+  "name": "Apple MacBook Pro 16",
+  "data": {
+    "year": 2050,
+    "price": "3500 USD",
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  }
+}      
+    headers={"Content-Type": "application/json"}
+    response=requests.request("PATCH",url=url,headers=headers,data=json.dumps(requests_data))
+    print("Updating existing details with PATCH method --> It update only the specified fields ")
+    print(response.json()) # converting raw data into Json format so we can read it in dictionary format and perform operations on it.
+    print(response.status_code)
+
+
+update_existing_object(new_id)
+
+
+
