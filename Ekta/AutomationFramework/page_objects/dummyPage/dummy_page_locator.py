@@ -11,8 +11,9 @@ class DummyLocators:
     PageHeading = (By.CLASS_NAME, "entry-title")
   # PageHeading2 = (Keys.class_name, "entry-title")
 
-    female_radio_btn = (By.ID, "female")
-    
+    #female_radio_btn = (By.ID, "female")
+    male_radio_btn = (By.ID, "male")
+
     passenger_dropdown = (By.ID, "admorepass")
 
     contry_dropdown = (By.ID, "billing_country")

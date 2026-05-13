@@ -27,7 +27,7 @@ class TestDummyWebsite:
         heading = self.dp.get_page_heading()
         print("Heading of the page is:", heading)     
 
-    def test_select_female_radio_btn(self):
+    def test_select_male_radio_btn(self):
         self.dp.select_male_radio_btn() 
     
     #def test_select_passenger_count(self):
