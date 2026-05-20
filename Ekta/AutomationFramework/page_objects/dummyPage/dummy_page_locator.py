@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+#from selenium.webdriver.common.keys import Keys
 
 class DummyLocators:
     fromCityField = (By.ID, "fromcity")
@@ -8,9 +9,11 @@ class DummyLocators:
     ReturnDate = (By.NAME, "returndate")
 
     PageHeading = (By.CLASS_NAME, "entry-title")
+  # PageHeading2 = (Keys.class_name, "entry-title")
 
-    male_radio_btn = (By.ID, "female")
-    
+    #female_radio_btn = (By.ID, "female")
+    male_radio_btn = (By.ID, "male")
+
     passenger_dropdown = (By.ID, "admorepass")
 
     contry_dropdown = (By.ID, "billing_country")

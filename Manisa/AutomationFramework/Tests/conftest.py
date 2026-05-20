@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 #A fixture is a function that runs before (and optionally after) your tests to set up the environment.
 
