@@ -65,4 +65,4 @@ class BaseAPI:
         self.log.info(f"Request body : {request_body}")
         self.log.info(f"response : {response.json()}")
         self.log.info(f"status code : {response.status_code}")
-        return response
+        return response 
