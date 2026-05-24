@@ -1,14 +1,21 @@
-2026-05-21 01:05:45 [INFO] (base_api.py:12) Method Name : GET
-2026-05-21 01:05:45 [INFO] (base_api.py:13) URL :https://api.restful-api.dev/objects
-2026-05-21 01:05:45 [INFO] (base_api.py:14) Headers : {}
-2026-05-21 01:05:45 [INFO] (base_api.py:15) Request body : {}
-2026-05-21 01:05:45 [INFO] (base_api.py:16) Headers : {}
-2026-05-21 01:05:45 [INFO] (base_api.py:17) response : [{'id': '1', 'name': 'Google Pixel 6 Pro', 'data': {'color': 'Cloudy White', 'capacity': '128 GB'}}, {'id': '2', 'name': 'Apple iPhone 12 Mini, 256GB, Blue', 'data': None}, {'id': '3', 'name': 'Apple iPhone 12 Pro Max', 'data': {'color': 'Cloudy White', 'capacity GB': 512}}, {'id': '4', 'name': 'Apple iPhone 11, 64GB', 'data': {'price': 389.99, 'color': 'Purple'}}, {'id': '5', 'name': 'Samsung Galaxy Z Fold2', 'data': {'price': 689.99, 'color': 'Brown'}}, {'id': '6', 'name': 'Apple AirPods', 'data': {'generation': '3rd', 'price': 120}}, {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}, {'id': '8', 'name': 'Apple Watch Series 8', 'data': {'Strap Colour': 'Elderberry', 'Case Size': '41mm'}}, {'id': '9', 'name': 'Beats Studio3 Wireless', 'data': {'Color': 'Red', 'Description': 'High-performance wireless noise cancelling headphones'}}, {'id': '10', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '64 GB', 'Screen size': 7.9}}, {'id': '11', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '254 GB', 'Screen size': 7.9}}, {'id': '12', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '419.99', 'Capacity': '64 GB'}}, {'id': '13', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '519.99', 'Capacity': '256 GB'}}]
-2026-05-21 01:05:45 [INFO] (base_api.py:18) status code : 200
-2026-05-21 01:05:46 [INFO] (base_api.py:12) Method Name : GET
-2026-05-21 01:05:46 [INFO] (base_api.py:13) URL :https://api.restful-api.dev/objects/7
-2026-05-21 01:05:46 [INFO] (base_api.py:14) Headers : {}
-2026-05-21 01:05:46 [INFO] (base_api.py:15) Request body : {}
-2026-05-21 01:05:46 [INFO] (base_api.py:16) Headers : {}
-2026-05-21 01:05:46 [INFO] (base_api.py:17) response : {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
-2026-05-21 01:05:46 [INFO] (base_api.py:18) status code : 200
+2026-05-22 00:51:07 [INFO] (base_api.py:12) Method Name : GET
+2026-05-22 00:51:07 [INFO] (base_api.py:13) URL :https://api.restful-api.dev/objects
+2026-05-22 00:51:07 [INFO] (base_api.py:14) Headers : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:15) Request body : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:16) Headers : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:17) response : [{'id': '1', 'name': 'Google Pixel 6 Pro', 'data': {'color': 'Cloudy White', 'capacity': '128 GB'}}, {'id': '2', 'name': 'Apple iPhone 12 Mini, 256GB, Blue', 'data': None}, {'id': '3', 'name': 'Apple iPhone 12 Pro Max', 'data': {'color': 'Cloudy White', 'capacity GB': 512}}, {'id': '4', 'name': 'Apple iPhone 11, 64GB', 'data': {'price': 389.99, 'color': 'Purple'}}, {'id': '5', 'name': 'Samsung Galaxy Z Fold2', 'data': {'price': 689.99, 'color': 'Brown'}}, {'id': '6', 'name': 'Apple AirPods', 'data': {'generation': '3rd', 'price': 120}}, {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}, {'id': '8', 'name': 'Apple Watch Series 8', 'data': {'Strap Colour': 'Elderberry', 'Case Size': '41mm'}}, {'id': '9', 'name': 'Beats Studio3 Wireless', 'data': {'Color': 'Red', 'Description': 'High-performance wireless noise cancelling headphones'}}, {'id': '10', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '64 GB', 'Screen size': 7.9}}, {'id': '11', 'name': 'Apple iPad Mini 5th Gen', 'data': {'Capacity': '254 GB', 'Screen size': 7.9}}, {'id': '12', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '419.99', 'Capacity': '64 GB'}}, {'id': '13', 'name': 'Apple iPad Air', 'data': {'Generation': '4th', 'Price': '519.99', 'Capacity': '256 GB'}}]
+2026-05-22 00:51:07 [INFO] (base_api.py:18) status code : 200
+2026-05-22 00:51:07 [INFO] (base_api.py:12) Method Name : GET
+2026-05-22 00:51:07 [INFO] (base_api.py:13) URL :https://api.restful-api.dev/objects/7
+2026-05-22 00:51:07 [INFO] (base_api.py:14) Headers : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:15) Request body : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:16) Headers : {}
+2026-05-22 00:51:07 [INFO] (base_api.py:17) response : {'id': '7', 'name': 'Apple MacBook Pro 16', 'data': {'year': 2019, 'price': 1849.99, 'CPU model': 'Intel Core i9', 'Hard disk size': '1 TB'}}
+2026-05-22 00:51:07 [INFO] (base_api.py:18) status code : 200
+2026-05-22 00:51:08 [INFO] (base_api.py:12) Method Name : GET
+2026-05-22 00:51:08 [INFO] (base_api.py:13) URL :https://www.gorest.co.in//public/v2/users
+2026-05-22 00:51:08 [INFO] (base_api.py:14) Headers : {'Authorization': 'Bearer 7e17415d0bf1e0f36b3df5ade76ca5ebeb60f1fc6281eb97ef7ee85b403ea663', 'Content-Type': 'application/json'}
+2026-05-22 00:51:08 [INFO] (base_api.py:15) Request body : {}
+2026-05-22 00:51:08 [INFO] (base_api.py:16) Headers : {'Authorization': 'Bearer 7e17415d0bf1e0f36b3df5ade76ca5ebeb60f1fc6281eb97ef7ee85b403ea663', 'Content-Type': 'application/json'}
+2026-05-22 00:51:08 [INFO] (base_api.py:17) response : [{'id': 8473090, 'name': 'Fr. Charuvrat Mishra', 'email': 'charuvrat_mishra_fr@kozey-kozey.test', 'gender': 'female', 'status': 'inactive'}, {'id': 8473089, 'name': 'Drona Bharadwaj', 'email': 'drona_bharadwaj@zulauf.test', 'gender': 'male', 'status': 'inactive'}, {'id': 8473088, 'name': 'Kashyapi Chattopadhyay', 'email': 'chattopadhyay_kashyapi@ankunding.example', 'gender': 'female', 'status': 'active'}, {'id': 8473087, 'name': 'Chakrika Joshi DO', 'email': 'chakrika_joshi_do@harber.test', 'gender': 'female', 'status': 'active'}, {'id': 8473086, 'name': 'Kashyap Kakkar', 'email': 'kakkar_kashyap@konopelski-roob.test', 'gender': 'male', 'status': 'inactive'}, {'id': 8473085, 'name': 'Bhadra Gill', 'email': 'gill_bhadra@bartoletti-toy.example', 'gender': 'female', 'status': 'inactive'}, {'id': 8473084, 'name': 'Jagadisha Sinha CPA', 'email': 'jagadisha_sinha_cpa@cummings-dach.example', 'gender': 'male', 'status': 'active'}, {'id': 8473083, 'name': 'Abhisyanta Sharma DDS', 'email': 'dds_sharma_abhisyanta@rippin-hegmann.example', 'gender': 'female', 'status': 'active'}, {'id': 8473082, 'name': 'Avadhesh Kakkar', 'email': 'kakkar_avadhesh@hackett.test', 'gender': 'male', 'status': 'inactive'}, {'id': 8473081, 'name': 'Narinder Nayar', 'email': 'nayar_narinder@bogisich.example', 'gender': 'male', 'status': 'active'}]
+2026-05-22 00:51:08 [INFO] (base_api.py:18) status code : 200
