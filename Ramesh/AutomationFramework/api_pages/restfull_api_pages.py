@@ -14,6 +14,19 @@ class RestFullAPI(BaseAPI):
         return response
     
 
+    def creat_new_object(self):
+        response = self.post_method(url=common_url, header=headers, request_body=post_request_data)
+        return response, response.json()['id']
+    
+
+    def update_new_object(self):
+        response = self.post_method(url=common_url, header=headers, request_body=post_request_data)
+        user_id = response.json()["id"]
+        updated_url = f"{common_url}/{user_id}"
+        response = self.put_method(url=updated_url, header=headers, request_body=post_request_data)
+        return response
+
+
     def get_All_users(self):
         response = self.get_method(get_all_users_url, header=go_rest_header)
         return response

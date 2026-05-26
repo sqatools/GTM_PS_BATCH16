@@ -11,7 +11,8 @@ def launch_website_and_verify():
     driver.find_element(By.ID, "fromcity").send_keys("Assam")
     driver.find_element(By.ID, "destcity").send_keys("Guwahati")
 
-    time.sleep(5)
+
+    time.sleep(95)
     driver.close()
 
 launch_website_and_verify()
