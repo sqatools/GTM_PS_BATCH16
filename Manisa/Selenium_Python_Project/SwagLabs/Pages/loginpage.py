@@ -1,0 +1,21 @@
+from Base.base import BasePage
+from .locators import Locators
+from Pages.Inventorypage import InventoryPage
+
+class LoginPage(BasePage):
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.locator = Locators()
+
+    def login_to_application(self, username, password):
+       
+        self.enter_text(self.locator.username_field,username)
+         
+        self.enter_text(self.locator.password_field,password)
+        self.click_element(self.locator.login_button)
+        return InventoryPage(self.driver)
+    def get_heading(self):
+        return self.get_element(self.locator.heading).text
+    def is_login_button_enabled(self):
+        return self.get_element(self.locator.login_button).is_enabled()
+    
