@@ -18,6 +18,7 @@ class TestOrangeHRM:
         login_button = self.driver.find_element(By.XPATH, "//button[normalize-space()='Login']")
         if login_button.is_displayed():
             print("login button is enabled")
+            login_button.click()
         else:
             print("login button is not enabled")
 

@@ -27,3 +27,9 @@ Status:
 
 7. Automation Practice page fields with Json file.
   -> https://sqatools.in/dummy-booking-website/
+
+
+8. Complete API Automation with page object Model 
+Reference API Website :
+-> https://restful-api.dev/
+-> https://gorest.co.in/
