@@ -9,6 +9,9 @@ driver=webdriver.Chrome()
 driver.get("https://sqatools.in/automation-practice-page/")
 driver.maximize_window()
 
+
+
+
 # 1. Get the absolute path first
 absolute_path = os.path.abspath("sample.text")
 print("Absolute path is :", absolute_path)
@@ -20,3 +23,6 @@ file_input = driver.find_element(By.ID, "fileUpload")
 file_input.send_keys(absolute_path)
 time.sleep(5)
 driver.quit()
+
+
+

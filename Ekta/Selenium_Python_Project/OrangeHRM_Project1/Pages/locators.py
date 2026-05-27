@@ -8,14 +8,33 @@ class Locators:
     password_field = (By.NAME, "password")
 
     login_btn = (By.XPATH, "//button[@type='submit']")
+    #Admin module locators
+    admin_btn=(By.XPATH, "//span[text()='Admin']") # qn -sir used link admin_page link but i used button
+    add_btn=(By.XPATH, "//button[normalize-space()='Add']")
+    user_role_dropdown=(By.XPATH, "//label[text()='User Role']//parent::div/parent::div//div[text()='-- Select --']")
+    user_admin_role_options = (By.XPATH, "//div[@role='option']//span[text()='Admin']")
+    user_status_dropdown=(By.XPATH, "//label[text()='Status']//parent::div/parent::div//div[text()='-- Select --']")
+    employee_name_field = (By.XPATH, "//label[text()='Employee Name']//parent::div/parent::div//input")
+    # User creation input fields
+    admin_username_field=(By.XPATH, "//label[text()='Username']//parent::div/parent::div//input")
+    admin_password_field=(By.XPATH, "//label[text()='Password']//parent::div/parent::div//input")
+    admin_confirm_password_field=(By.XPATH, "//label[text()='Confirm Password']//parent::div/parent::div//input")
+    save_btn = (By.XPATH, "//button[@type='submit']")
+    
+    #locators for Job
+    job_btn=(By.XPATH, "//span[text()='Job ']") # 
+    job_title_btn=(By.XPATH, "//a[text()='Job Titles']")
+    job_title_add_btn=(By.XPATH, "//button[contains(., 'Add')]")
+
+    # locators for Add Job Title Page
+    job_title_input = (By.XPATH, "//label[text()='Job Title']/parent::div/following-sibling::div/input")
+    job_description_textarea = (By.XPATH, "//label[text()='Job Description']/parent::div/following-sibling::div/textarea")
+    job_specification_upload = (By.XPATH, "//input[@type='file']")
+    job_note_textarea = (By.XPATH, "//label[text()='Note']/parent::div/following-sibling::div/textarea")
+    job_save_btn = (By.XPATH, "//button[@type='submit']")
+    job_cancel_btn = (By.XPATH, "//button[text()=' Cancel ' or normalize-space()='Cancel']")
+
+
+
+    
    
-    # --- My Info Page Locators ---
-    # Robust XPATH targets the menu anchor directly regardless of DOM depth variations
-    my_info_tab = (By.XPATH, "//a[contains(@href, 'viewMyDetails')]")
-    
-    first_name_field = (By.NAME, "firstName")
-    middle_name_field = (By.NAME, "middleName")
-    last_name_field = (By.NAME, "lastName")
-    
-    # Highly resilient locator targeting the first submit button within the personal details form section
-    personal_details_save_btn = (By.XPATH, "(//button[@type='submit'])[1]")
