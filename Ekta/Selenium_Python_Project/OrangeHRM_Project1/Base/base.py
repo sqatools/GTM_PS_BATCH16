@@ -24,6 +24,9 @@ class BasePage:
         element = self.get_clickable_element(locator) # this is correct get_element check visibilty of element
         element.clear() # clear the existing text before entering new text
         element.send_keys(value)
-
+    
+    def get_present_element(self, locator):
+        """Finds a hidden or structural element after waiting for its presence in the DOM."""
+        return self.wait.until(EC.presence_of_element_located(locator))
 
     
