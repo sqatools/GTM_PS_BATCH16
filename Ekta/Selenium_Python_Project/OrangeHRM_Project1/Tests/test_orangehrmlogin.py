@@ -30,18 +30,23 @@ class TestOrangeHRM:
         )
     #something is incorrect here need to check it again      
     def test_add_job_title(self):
-        self.job_title_page = self.lp.click_on_job_title()
+        #self.job_title_page = self.lp.click_on_job_title()
+        TestOrangeHRM.job_title_page = self.lp.click_on_job_title()
         time.sleep(5)
     
    
     def test_fill_job_title_form(self):
         self.job_title_page.add_new_job_title(
-            job_title="Automation Engineer L1",  
+            job_title="Automation Engineer L22",  
             description="Responsible for developing and maintaining automated test scripts to ensure software quality.",
             file_path="C:\\Users\\User_Resume.docx",
             note="This is a critical role for our QA team."     
         )
-        time.sleep(8)
+        time.sleep(5)
+  
+        #self.job_title_page.navigate_to_employee_reports()
+        time.sleep(5)
+    
         
     
      

@@ -1,6 +1,8 @@
 import os
+import time
 from Base.base import BasePage
 from .locators import Locators
+#from Pages import EmployeeReportPage
 
 class JobTitlePage(BasePage):
     def __init__(self, driver):
@@ -26,5 +28,17 @@ class JobTitlePage(BasePage):
         if note:
             self.enter_text(self.locator.job_note_textarea, note)
             
-        # Click Save
+        # Click Save button
         self.click_element(self.locator.job_save_btn)
+        time.sleep(2)
+        
+    #def navigate_to_employee_reports(self):
+        """Navigates to the Reports section from the Job Titles page."""
+        self.click_element(self.locator.time_btn)
+        time.sleep(2)
+        self.click_element(self.locator.reports_btn)
+        time.sleep(2)
+        self.click_element(self.locator.employee_reports_option)
+        time.sleep(2)
+        return EmployeeReportPage(self.driver)
+        

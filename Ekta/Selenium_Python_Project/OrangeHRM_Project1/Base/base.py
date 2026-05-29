@@ -16,6 +16,7 @@ class BasePage:
         """Use this specifically for clicking."""
         return self.wait.until(EC.element_to_be_clickable(locator))
     
+    
     def click_element(self, locator):
         element = self.get_clickable_element(locator) # use the get_clickable_element method for clickable elements
         element.click()

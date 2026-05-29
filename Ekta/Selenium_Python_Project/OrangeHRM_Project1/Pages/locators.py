@@ -33,7 +33,23 @@ class Locators:
     job_note_textarea = (By.XPATH, "//label[text()='Note']/parent::div/following-sibling::div/textarea")
     job_save_btn = (By.XPATH, "//button[@type='submit']")
     job_cancel_btn = (By.XPATH, "//button[text()=' Cancel ' or normalize-space()='Cancel']")
+  
+    # locators for Time and Reports 
+    time_btn = (By.XPATH, "//span[text()='Time' or normalize-space()='Time']")
+    reports_btn = (By.XPATH, "//span[text()='Reports' or normalize-space()='Reports']")
+    employee_reports_option = (By.XPATH, "//ul[@class='oxd-dropdown-menu']//a[text()='Employee Reports']")
 
+    #  Employee Report locators 
+    report_employee_name_field = (By.XPATH, "//label[text()='Employee Name']/parent::div/following-sibling::div//input")
+    report_project_name_field = (By.XPATH, "//label[text()='Project Name']/parent::div/following-sibling::div//input")
+    report_activity_dropdown = (By.XPATH, "//label[text()='Activity Name']/parent::div/following-sibling::div//div[contains(@class, 'select-text')]")
+    
+    # Date Range Locators 
+    report_from_date = (By.XPATH, "//label[text()='From']/parent::div/following-sibling::div//input")
+    report_to_date = (By.XPATH, "//label[text()='To']/parent::div/following-sibling::div//input")
+    
+    # View Report Button
+    report_view_btn = (By.XPATH, "//button[@type='submit' or normalize-space()='View']")
 
 
     
