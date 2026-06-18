@@ -237,14 +237,179 @@
 
 # print(a)
 
-a = [12,43,4,4.45,5,5,56,6,6,56]
+    # a = [12,43,4,4.45,5,5,56,6,6,56]
 
-d = sorted(a)
+    # d = sorted(a)
 
-print(d)
+    # print(d)
 
-a = [12,43,4,4.45,5,5,56,6,6,56]
+    # a = [12,43,4,4.45,5,5,56,6,6,56]
 
-f = sorted(a,reverse=True)
+    # f = sorted(a,reverse=True)
 
-print(f)
+#     # print(f)
+# # a = [12,43,4,4.45,5,5,56,6,6,56]
+
+# a = [1,2,30]
+# b = [23,45]
+
+# c = a +b
+
+# print(c)
+
+
+# a = [12,43,4,4.45,5,5,56,6,6,56]
+
+# f = sorted(a)
+
+# print(f)
+
+# g = sorted(a,reverse = True)
+
+# print(g)
+
+
+# a = [12,3,4]
+
+# b = a.copy()
+
+# b.append(100)
+
+# a.append(300)
+
+# print(a)
+# print(b)
+
+# a = (10,23,40,12,10,34,23,40)
+
+# l = [item for item in a if item not in l]
+
+# print(l)
+
+# a = "We are lesning Python"
+
+# g = a.split()
+
+
+# d = {}
+# for item in g :
+#     d[item] = len(item)
+
+# print(d)
+
+
+# l1 = [12,3,4,5,5]
+
+# l1.pop()
+
+# print(l1)
+
+# s = {1,2,3,[2,32,3]}
+
+# print(s)
+
+# s = {1,2,3}
+# b = {4,5,3}
+
+# s.discard(3)
+
+# print(s)
+
+
+# a =12
+
+# def func():
+#     b = 23
+#     def abc():
+#         c = 78
+#         print("Global", a)
+#         # print("Non local", b)
+#         print("Local", c)
+#         nonlocal b
+#         print("Non local",b)
+#         b=2333
+#         print("new non local", b)
+#     abc()
+
+# func()
+
+
+# a = 12
+
+# def func():
+#     b = 34
+#     def abc():
+#         global a 
+#         nonlocal b
+#         c = 346
+#         print("Global",a)
+#         print("Non local",b)
+#         print("Local",c)
+#         a = 455
+#         b = 89
+#         print('After change the global', a)
+#         print("After change the nonocal", b)
+#     abc()
+# func()
+
+
+# import openpyxl
+
+# def func(file_path,sheet_name):
+#     wb = openpyxl.load_workbook(file_path)
+#     sheet= wb[sheet_name]
+#     max_row = sheet.max_row
+#     max_col = sheet.max_column
+#     for r in range(1,max_row+1):
+#         for c in range(1,max_col+1):
+#             print(sheet.cell(r,c).value, end=" ")
+#         print()    
+# path = "D://Test_1234.xlsx"
+# func(file_path=path,sheet_name="Sheet1")
+
+# import openpyxl
+# path = "D://Test_1234.xlsx"
+# def func(file_path,sheet_name,cell_name,cell_valu):
+    
+#     wb = openpyxl.load_workbook(file_path)
+#     sheet = wb[sheet_name]
+#     cell = sheet[cell_name]
+#     cell.value = cell_valu
+#     wb.save(path)
+
+# func(path,"Sheet2","A1","Anindya6")    
+
+# def func(file_path,content):
+#     with open(file_path,"a") as f :
+#         f.write(content)
+
+# file = "Anindya233.txt"
+# con = 'Text'
+
+# func(file,con)
+
+import json 
+
+def func(filepath):
+    with open(filepath,'r') as f :
+        data = f.read()
+        s = json.loads(data)
+        return s
+
+g = func(r"C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json") 
+print(g)
+
+print(type(g))
+
+print(g['Anindua'])
+
+g['arnab'] = 34
+
+g['Raju'] = 56
+
+def func(path,new_contntn):
+    with open(path,'w') as f :
+        new_data = json.dumps(new_contntn)
+        f.write(new_data)
+
+func(r'C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json',g)
