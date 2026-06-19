@@ -388,28 +388,174 @@
 
 # func(file,con)
 
-import json 
+# import json 
 
-def func(filepath):
-    with open(filepath,'r') as f :
-        data = f.read()
-        s = json.loads(data)
-        return s
+# def func(filepath):
+#     with open(filepath,'r') as f :
+#         data = f.read()
+#         s = json.loads(data)
+#         return s
 
-g = func(r"C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json") 
-print(g)
+# g = func(r"C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json") 
+# print(g)
 
-print(type(g))
+# print(type(g))
 
-print(g['Anindua'])
+# print(g['Anindua'])
 
-g['arnab'] = 34
+# g['arnab'] = 34
 
-g['Raju'] = 56
+# g['Raju'] = 56
 
-def func(path,new_contntn):
-    with open(path,'w') as f :
-        new_data = json.dumps(new_contntn)
-        f.write(new_data)
+# def func(path,new_contntn):
+#     with open(path,'w') as f :
+#         new_data = json.dumps(new_contntn)
+#         f.write(new_data)
 
-func(r'C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json',g)
+# func(r'C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\amla.json',g)
+
+# def func(file_path,content):
+#     with open(file_path,'a') as f :
+#         f.write(content)
+# con = 'Tis'
+# func("Anindya_paul.txt",con)
+
+
+
+# import json
+
+# def func(file_path):
+#     with open(file_path,'r') as f :
+#         data = f.read()
+#         d = json.loads(data)
+#         return d 
+
+# s = func(r"C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\new_text.json")
+
+# print(s)
+
+# print(s['Anindya'])
+
+# s['age'] = 56
+# s['job'] = ['SE']
+
+# def func2(file_path,content):
+#     with open(file_path,'w') as f :
+#         g = json.dumps(content)
+#         f.write(g)
+
+# func2(r"C:\Users\hp\Desktop\gitcode\GTM_PS_BATCH16\Anindya\Python_progtamming\Variables\test_automation\new_text.json",s)
+
+# import new_text
+
+# import json
+
+# data = json.loads('{"Anindya": 23, "Partha": 56, "age": 56, "job": ["SE"]}')
+# print(data)
+# print(data['Anindya'])
+
+# data['abhijit'] = 90
+
+# s =json.dumps(data)
+
+# print(s)
+
+
+# import openpyxl
+
+# workbook = openpyxl.load_workbook("D://Test_1234.xlsx")
+# sheet = workbook["Sheet1"]
+
+# print(sheet.cell(2,1).value)
+
+# import os
+
+# f = os.path.join("D://","test.py")
+# print(f)
+
+# OS module
+
+# import os
+# path_d = "D://Engagement"
+
+# print(os.path.isdir(path_d))
+
+# print(os.path.isfile(path_d))
+
+# path_d = "D://abvcd"
+
+
+# import os
+
+# if os.path.exists(path_d):
+#     os.rmdir(path_d)
+
+# import datetime
+
+# from datetime import datetime
+
+# d = datetime.now()
+
+# print(d.day)
+# print(d.month)
+# print(d.year)
+# print(d.minute)
+# print(d.date())
+
+# import datetime
+
+# from datetime import datetime
+
+
+# unique = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
+
+# print(unique)
+
+
+# import datetime
+
+# from datetime import datetime, timedelta
+
+# s = datetime.now()
+
+# gap = s + timedelta(days=5)
+
+# print(gap)
+
+
+
+# import faker
+
+# from faker import Faker
+
+# fk = Faker()
+
+# for item in range(1,10):
+#     print(fk.first_name())
+
+#     print(fk.last_name())
+#     print(fk.email())
+
+
+#  try Except block
+
+def func(n1,n2,n3,n4):
+    try:
+        additin = n1 + n2
+        print(additin)
+        assert n2 == n3, "This is"
+        print("Assertion is done")
+        div = n3/n4
+        print(div)
+    except TypeError as e :
+        print("Type error is occire",e)
+    except AssertionError as e :
+        print("Assertion error has been A", e)
+    except ZeroDivisionError as e :
+        print("Zero division errro is omne", e) 
+
+func(12,8,8,0)
+
+            
+
+
