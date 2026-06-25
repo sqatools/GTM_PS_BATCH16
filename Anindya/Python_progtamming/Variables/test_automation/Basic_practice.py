@@ -539,22 +539,22 @@
 
 #  try Except block
 
-def func(n1,n2,n3,n4):
-    try:
-        additin = n1 + n2
-        print(additin)
-        assert n2 == n3, "This is"
-        print("Assertion is done")
-        div = n3/n4
-        print(div)
-    except TypeError as e :
-        print("Type error is occire",e)
-    except AssertionError as e :
-        print("Assertion error has been A", e)
-    except ZeroDivisionError as e :
-        print("Zero division errro is omne", e) 
+# def func(n1,n2,n3,n4):
+#     try:
+#         additin = n1 + n2
+#         print(additin)
+#         assert n2 == n3, "This is"
+#         print("Assertion is done")
+#         div = n3/n4
+#         print(div)
+#     except TypeError as e :
+#         print("Type error is occire",e)
+#     except AssertionError as e :
+#         print("Assertion error has been A", e)
+#     except ZeroDivisionError as e :
+#         print("Zero division errro is omne", e) 
 
-func(12,8,8,0)
+# func(12,8,8,0)
 
             
 
