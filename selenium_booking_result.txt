@@ -1,0 +1,6 @@
+Test result summary
+URL: https://sqatools.in/dummy-booking-website/
+Submit button clicked: False
+Note: No submit button was found, so the test result is based on field interaction and screenshot evidence.
+Screenshot: selenium_booking_result.png
+Timestamp: 2026-06-28T15:04:43.467105
