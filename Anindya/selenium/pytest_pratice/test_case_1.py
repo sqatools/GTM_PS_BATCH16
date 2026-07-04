@@ -21,6 +21,7 @@ def test_2(func):
     time.sleep(5)
 
 def test_3(func):
+    
     driver = func
     print(driver.current_url)
 
