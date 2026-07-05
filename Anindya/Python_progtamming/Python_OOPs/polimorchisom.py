@@ -26,6 +26,12 @@ class Child(Father):
     def func(self):
         print("Welcome to Son class")    
 
+    def addition(self,n1,n2):
+        print(n1+n2)    
+
+    def addition(self,a,b,c):
+        print(a+b+c)    
+
         
 
 obj = Child("Anindya","Arun","Scoppio")
@@ -33,3 +39,5 @@ obj = Child("Anindya","Arun","Scoppio")
 obj.all_details()
 
 obj.func()
+
+obj.addition(12,4,6)
