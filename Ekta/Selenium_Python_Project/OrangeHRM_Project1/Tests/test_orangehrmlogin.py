@@ -1,34 +1,52 @@
 import pytest
 import time
-#from utilities.utils import Utils
-from Pages.myinfopage import MyInfoPage
 from Pages.loginpage import LoginPage
+from Pages.JobTitlePage import JobTitlePage
 
 @pytest.mark.usefixtures("get_driver_class")
 class TestOrangeHRM:    
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
         self.lp = LoginPage(self.driver)
-        self.mi = MyInfoPage(self.driver)
+        self.job_title_page = JobTitlePage(self.driver)
         print("Test setup initiated")
-
+       
     def test_login_to_orangehrm(self):
         self.lp.login_to_application(username="Admin", password="admin123")
+       # self.lp.login_to_application.log.info("Login successful")
+        time.sleep(3)  
+     
+   
+    def test_add_user(self):
+        self.lp.add_user(
+
+            role_name="ESS", 
+            status="Disabled", 
+            employee_name="AdminAuto QA User",
+            admin_username="Tester1111",
+            admin_password="@Tetser12345",
+            admin_confirm_password="@Tetser12345",
+         
+        )
+    #something is incorrect here need to check it again      
+    def test_add_job_title(self):
+        #self.job_title_page = self.lp.click_on_job_title()
+        TestOrangeHRM.job_title_page = self.lp.click_on_job_title()
         time.sleep(5)
     
-  
-    def test_update_my_info(self):
-        """Test case to login, navigate to My Info, and update personal details."""
-        # 1. Login
-        self.lp.login_to_application(username="Admin", password="admin123")
-        
-        # 2. Navigate to My Info
-        self.mi.navigate_to_my_info()
-        
-        # 3. Update Details
-        self.mi.update_personal_details(
-            first_name="John", 
-            middle_name="Robert", 
-            last_name="Doe"
+   
+    def test_fill_job_title_form(self):
+        self.job_title_page.add_new_job_title(
+            job_title="Automation Engineer L000",  
+            description="Responsible for developing and maintaining automated test scripts to ensure software quality.",
+            file_path="C:\\Users\\User_Resume.docx",
+            note="This is a critical role for our QA team."     
         )
-        time.sleep(3)
+        time.sleep(5)
+  
+        self.job_title_page.navigate_to_employee_reports()
+        time.sleep(5)
+    
+        
+    
+     

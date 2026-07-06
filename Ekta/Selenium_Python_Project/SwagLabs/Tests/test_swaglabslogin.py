@@ -9,13 +9,13 @@ import time
 class Testswaglabs: 
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
-        self.lp = LoginPage(self.driver)
-        self.inventory_page = InventoryPage(self.driver)
+        self.lpobj = LoginPage(self.driver)
+        self.inventory_page = InventoryPage(self.driver) #self.driver is working here because we written self.cls.drover=driver in conftest.py file and we are using get_driver_class fixture in this test class    
         self.checkout_page = CheckoutPage(self.driver)
         print("Test setup initiated")
     
     def test_login_to_swaglabs(self):
-        self.lp.login_to_application(username="visual_user", password="secret_sauce")
+        self.lpobj.login_to_application(username="visual_user", password="secret_sauce")
         time.sleep(5)
         pyautogui.press('enter') # used this for pop up alert which is not allowing to click on login button and move forward to inventory page
     

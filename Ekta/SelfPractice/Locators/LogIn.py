@@ -25,7 +25,7 @@ driver.find_element(By.ID,"skills").click()
 dd_demo=driver.find_element(By.ID,"skills")
 dd_multi=Select(dd_demo)
 dd_multi.select_by_index(1)
-
+dd_multi.select_by_value
 dd_multi.select_by_visible_text("API Testing")
 
 dd_multi.select_by_index(0)

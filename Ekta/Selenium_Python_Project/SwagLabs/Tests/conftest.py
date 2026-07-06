@@ -11,6 +11,8 @@ def get_driver_class(request):
     driver.implicitly_wait(10)
     request.cls.driver = driver
     yield driver
+    driver.quit() 
+    
 
    
 
