@@ -7,7 +7,7 @@ class employee:
         self.age = age
         self.salary = salary
 
-    def display_employee_details(self):  #instance method which is used to display the employee details.
+    '''def display_employee_details(self):  #instance method which is used to display the employee details.
         print("Employee Name:", self.name)
         print("Employee Age:", self.age)
         print("Employee Salary:", self.salary)
@@ -19,10 +19,22 @@ class employee:
     def EmpDetails(self):
         print("Employee Name:", self.name)
         print("Employee age:", self.age)
-        print("Employee salary:", self.salary)
+        print("Employee salary:", self.salary)'''
 
 
 #create object of the class
 obj = employee("Hari", "32" , "12000000")
 obj.showEmpName()
 obj.EmpDetails()
+
+
+
+class Car:
+    def __init__(kelf):
+        print("constructor called")
+
+    print("1233")
+
+car1 = Car()
+
+

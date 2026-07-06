@@ -3,7 +3,7 @@ from Pages.loginpage import LoginPage
 from Pages.Inventorypage import InventoryPage
 from Pages.checkoutpage import CheckoutPage 
 import time
-import pyautogui
+#import pyautogui
 
 @pytest.mark.usefixtures("get_driver_class")
 class Testswaglabs: 

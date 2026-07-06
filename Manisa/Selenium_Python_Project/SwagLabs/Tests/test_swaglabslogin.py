@@ -3,7 +3,7 @@ from Pages.loginpage import LoginPage
 from Pages.Inventorypage import InventoryPage
 from Pages.checkoutpage import CheckoutPage 
 import time
-import pyautogui
+#import pyautogui
 
 @pytest.mark.usefixtures("get_driver_class")
 class Testswaglabs: 
@@ -17,7 +17,7 @@ class Testswaglabs:
     def test_login_to_swaglabs(self):
         self.lp.login_to_application(username="visual_user", password="secret_sauce")
         time.sleep(5)
-        pyautogui.press('enter') # used this for pop up alert which is not allowing to click on login button and move forward to inventory page
+        # pyautogui.press('enter') # used this for pop up alert which is not allowing to click on login button and move forward to inventory page
     
     def test_add_elements_to_cart(self):
         self.inventory_page.add_backpack_to_cart()
