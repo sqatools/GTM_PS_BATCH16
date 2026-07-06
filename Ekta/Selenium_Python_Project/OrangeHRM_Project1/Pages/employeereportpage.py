@@ -3,7 +3,7 @@ from Base.base import BasePage
 from .locators import Locators
 from selenium.webdriver.common.by import By
 
-#class EmployeeReportPage(BasePage):
+class EmployeeReportPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.locator = Locators()

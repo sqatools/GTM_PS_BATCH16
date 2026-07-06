@@ -22,8 +22,8 @@ class TestOrangeHRM:
 
             role_name="ESS", 
             status="Disabled", 
-            employee_name="Ranga  Akunuri",
-            admin_username="Tester0000",
+            employee_name="AdminAuto QA User",
+            admin_username="Tester1111",
             admin_password="@Tetser12345",
             admin_confirm_password="@Tetser12345",
          
@@ -37,14 +37,14 @@ class TestOrangeHRM:
    
     def test_fill_job_title_form(self):
         self.job_title_page.add_new_job_title(
-            job_title="Automation Engineer L22",  
+            job_title="Automation Engineer L000",  
             description="Responsible for developing and maintaining automated test scripts to ensure software quality.",
             file_path="C:\\Users\\User_Resume.docx",
             note="This is a critical role for our QA team."     
         )
         time.sleep(5)
   
-        #self.job_title_page.navigate_to_employee_reports()
+        self.job_title_page.navigate_to_employee_reports()
         time.sleep(5)
     
         

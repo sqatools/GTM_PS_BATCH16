@@ -2,7 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage:
-    def __init__(self, driver):
+    def __init__(self, driver): # constructor method to initialize the driver and wait objects
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
 
