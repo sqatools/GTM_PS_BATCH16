@@ -1,5 +1,3 @@
-import time
-
 from Base.base import BasePage
 from Pages.locators import Locators
 
