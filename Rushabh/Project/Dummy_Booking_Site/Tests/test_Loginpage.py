@@ -1,37 +1,30 @@
-
+import pytest
 import time
+from Pages.login_page import LoginPage
+@pytest.mark.usefixtures("get_driver_class") #due to this selenium knows that to run get_driver_class fixture before running the test cases in this class   
+class TestLogIn:
+    @pytest.fixture(scope="function", autouse=True)
+    def setup(self, get_driver_class):
+        self.driver = get_driver_class
+        self.login_pageobj = LoginPage(self.driver)
+        print("Test setup initiated")
 
-from Base.Base import Base_page
-from Pages.locators import Locators
-from selenium.webdriver.support import expected_conditions as EC
+    def test_login_flow(self):
+        # 1. Click on the login link
+        self.login_pageobj.click_login_link()
+        time.sleep(4)
 
-class LoginPage(Base_page):
+        # 2. Enter login credentials and submit
+        self.login_pageobj.enter_login_details(username="9764174076", password="Rushabh@123")
+        time.sleep(2)
 
-    def __init__(self, driver):
-        super().__init__(driver)
+        self.login_pageobj.enter_second_logindetails(second_sername="9764174076", second_password="Rushabh@123")
+        time.sleep(2)
 
-    
-    def click_login_link(self):
-        time.sleep(5)
-        self.click_element(Locators.login_link)
-        time.sleep(3)
+        expected_error_message = "Error: The username 9764174076 is not registered on this site. If you are unsure of your username, try your email address instead."
+        actual_error_message = self.login_pageobj.get_error_message_text()
+        assert actual_error_message == expected_error_message, f"Expected error message: '{expected_error_message}', but got: '{actual_error_message}'"     
 
-         # teeling driver to switch to new tab and perform action on new tab opened after clicking on login link
-        handles= self.driver.window_handles # it creates list of all the tabs opened in browser and stores in handles variable
-        self.driver.switch_to.window(handles[1])
-        print("Switched to new window")
 
-            
-    def enter_login_details(self, username, password):
-        self.enter_text(Locators.email_username, username)
-        self.enter_text(Locators.email_password, password) 
-        self.click_element(Locators.login_button)
-    
-    def enter_second_logindetails(self,second_sername,second_password):
-        self.enter_text(Locators.second_username,second_sername)
-        self.enter_text(Locators.second_password,second_password)
-        self.click_element(Locators.second_login_button)    
 
-    def get_error_message_text(self):
-        element = self.wait.until(EC.presence_of_element_located(Locators.error_message))
-        return element.text
+  
