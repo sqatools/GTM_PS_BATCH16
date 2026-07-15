@@ -33,5 +33,31 @@ class Test_script:
     def test3(self):
         self.s1.element_click(self.d1.click_field)
 
+    def test_eneblaed_selected(self):
+        assert self.s1.element_enabled(self.d1.male_radio), 'Button not enabled'
+        assert self.s1.element_displayed(self.d1.male_radio), "Button not displayed"
+
+        assert not self.s1.element_selected(self.d1.male_radio),'button is selected'
+        self.s1.element_click(self.d1.male_radio)
+        assert self.s1.element_selected(self.d1.male_radio), "Button is not selected"
+
+    def test_verify_url_and_title(self):
+        current_url = self.s1.get_url()
+        print("The current url is ", current_url)
+        assert "dummy" in current_url, "Not presengt"
+        title = self.s1.get_title()
+        print("The title is ", title)
+        assert "Dummy" in title, "Title not matched"
+
+    def drop_down(self):
+        value = "Add 2 more passenger (200%)"
+        self.s1.element_dropdown(self.d1.drop_down_1,value)
+        value2 = "India"    
+        self.s1.element_dropdown(self.d1.drop_down_2,value2)
+
+        
+
+
+
 
 
