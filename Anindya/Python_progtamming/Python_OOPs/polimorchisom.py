@@ -23,8 +23,8 @@ class Child(Father):
         self.show_father_details()
         self.show_son_details()
 
-    def func(self):
-        print("Welcome to Son class")    
+    # def func(self):
+    #     print("Welcome to Son class")    
 
     def addition(self,n1,n2):
         print(n1+n2)    
