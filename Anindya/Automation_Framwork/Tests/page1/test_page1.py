@@ -18,10 +18,24 @@ class Test_Page_New:
         self.t1 = Test_Page_one(self.driver)
         self.util = Utils()
         self.userr_data = self.util.read_json_data("PageObjectModel/Page_1/user_data.json")
-    @pytest.mark.f2
+    # @pytest.mark.f2
     def test_case_one(self):
         # self.t1.enter_multiple_city("MUmbai","Bangalore")
         # import pdb; pdb.set_trace()
         self.t1.enter_multiple_city(self.userr_data["fromcity"],self.userr_data["descity"])
         time.sleep(10)
+
+
+    def test_case_two(self):
+        self.t1.select_gender(self.userr_data["gender"])  
+        time.sleep(5)  
+
+    def test_case_three(self):
+        self.t1.select_passenger(self.userr_data["passenger"])    
+        time.sleep(5)
+
+    def test_case_four(self):
+        self.t1.select_country(self.userr_data["country"])
+        time.sleep(5)
+        
 

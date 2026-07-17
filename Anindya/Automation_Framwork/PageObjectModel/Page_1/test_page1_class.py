@@ -14,5 +14,18 @@ class Test_Page_one(SeleniumBase):
         self.log.info("This function name is enter_multiple_city")
         self.element_enter_text(self.d1.fromcity,fromcity)
         self.element_enter_text(self.d1.descity,descity)
+
+    def select_gender(self,gender):
+        if gender.lower() == "male":
+            self.element_click(self.d1.male_radio)   
+        elif gender.lower() == "female":
+            self.element_click(self.d1.female_radio)
+
+    def select_passenger(self,value):
+        self.element_dropdown(self.d1.drop_down_1,value)
+
+    def select_country(self,value1):
+        self.element_dropdown(self.d1.drop_down_2,value1)
+                        
             
 

@@ -1,5 +1,8 @@
 {
     "url" : "https://sqatools.in/dummy-booking-website/",
     "fromcity" : "Bangalore",
-    "descity" : "Mumbai"
+    "descity" : "Mumbai",
+    "gender" : "female",
+    "passenger" : "Add 3 more passenger (200%)",
+    "country" : "India"
 }

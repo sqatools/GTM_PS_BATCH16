@@ -1,5 +1,9 @@
-2026-07-17 17:30:23 [INFO] (test_page1_class.py:14) This function name is enter_multiple_city
-2026-07-17 17:30:23 [INFO] (selenium_base.py:34) the name of the value is Bangalore and locator is ('xpath', "//input[@name='fromcity']")
-2026-07-17 17:30:23 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//input[@name='fromcity']")
-2026-07-17 17:30:24 [INFO] (selenium_base.py:34) the name of the value is Mumbai and locator is ('xpath', "//input[@name='destcity']")
-2026-07-17 17:30:24 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//input[@name='destcity']")
+2026-07-17 18:10:36 [INFO] (test_page1_class.py:14) This function name is enter_multiple_city
+2026-07-17 18:10:36 [INFO] (selenium_base.py:34) the name of the value is Bangalore and locator is ('xpath', "//input[@name='fromcity']")
+2026-07-17 18:10:36 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//input[@name='fromcity']")
+2026-07-17 18:10:36 [INFO] (selenium_base.py:34) the name of the value is Mumbai and locator is ('xpath', "//input[@name='destcity']")
+2026-07-17 18:10:36 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//input[@name='destcity']")
+2026-07-17 18:10:47 [INFO] (selenium_base.py:29) The name of the locator is ('id', 'female')
+2026-07-17 18:10:47 [INFO] (selenium_base.py:25) the name of the locator is ('id', 'female')
+2026-07-17 18:10:52 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//select[@id='admorepass']")
+2026-07-17 18:10:57 [INFO] (selenium_base.py:25) the name of the locator is ('xpath', "//select[@id='billing_country']")

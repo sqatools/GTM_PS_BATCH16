@@ -13,6 +13,7 @@ class Element_locator:
     click_field = (By.LINK_TEXT,"Home")
 
     male_radio = (By.ID,"male")
+    female_radio = (By.ID,"female")
     drop_down_1 = (By.XPATH,"//select[@id='admorepass']")
     drop_down_2 = (By.XPATH,"//select[@id='billing_country']")
 
