@@ -1,6 +1,8 @@
 import selenium
 from selenium import webdriver
 
+import logging
+
 from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support.wait import WebDriverWait
@@ -17,19 +19,24 @@ class SeleniumBase:
     def __init__(self,driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver,10)
+        self.log = logging.getLogger(__name__)
 
     def get_element(self,locator):
+        self.log.info(f"the name of the locator is {locator}")
         return self.wait.until(ec.presence_of_element_located(locator))
     
     def element_click(self,locator):
+        self.log.info(f'The name of the locator is {locator}')
         element = self.get_element(locator)
         element.click()
 
     def element_enter_text(self,locator,value):
+        self.log.info(f'the name of the value is {value} and locator is {locator}')
         element = self.get_element(locator)
         element.send_keys(value)
 
     def read_text(self,locator):
+        self.log.info(f'the name of the locator is {locator}')
         element = self.get_element(locator)
         return element.text
 

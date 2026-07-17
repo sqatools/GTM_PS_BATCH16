@@ -11,6 +11,7 @@ class Test_Page_one(SeleniumBase):
         self.d1 = Element_locator()
 
     def enter_multiple_city(self,fromcity,descity):
+        self.log.info("This function name is enter_multiple_city")
         self.element_enter_text(self.d1.fromcity,fromcity)
         self.element_enter_text(self.d1.descity,descity)
             
