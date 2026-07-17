@@ -21,7 +21,7 @@ class Test_Page_New:
 
     def test_case_one(self):
         # self.t1.enter_multiple_city("MUmbai","Bangalore")
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         self.t1.enter_multiple_city(self.userr_data["fromcity"],self.userr_data["descity"])
         time.sleep(10)
 
