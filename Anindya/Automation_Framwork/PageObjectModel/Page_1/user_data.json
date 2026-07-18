@@ -4,5 +4,13 @@
     "descity" : "Mumbai",
     "gender" : "female",
     "passenger" : "Add 3 more passenger (200%)",
-    "country" : "India"
+    "country" : "India",
+    "firstname" : "Anindya",
+    "lastname" : "Paul",
+    "billing_name" : "Anindya Paul",
+    "billing_phone" : "9475902522",
+    "email" : "anindyapl389@gmail.com",
+    "address" : "1no kalighat road",
+    "postcode" : "736170",
+    "prefeture" : "New"
 }

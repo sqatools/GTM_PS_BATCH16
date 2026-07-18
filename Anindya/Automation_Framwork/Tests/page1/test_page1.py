@@ -39,3 +39,10 @@ class Test_Page_New:
         time.sleep(5)
         
 
+    def test_case_five(self):
+        self.t1.select_first_name_last_name(self.userr_data["firstname"],self.userr_data["lastname"])
+        time.sleep(5)
+
+    def test_case_six(self):
+        self.t1.select_all_details(self.userr_data["billing_name"],self.userr_data["billing_phone"],self.userr_data["email"],self.userr_data["address"],self.userr_data["postcode"],self.userr_data["prefeture"])    
+        time.sleep(5)

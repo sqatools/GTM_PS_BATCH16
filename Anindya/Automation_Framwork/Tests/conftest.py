@@ -6,13 +6,14 @@ from selenium.webdriver.chrome.options import Options
 
 import pytest
 
-headless = True
+# headless = True
 
 @pytest.fixture(scope="class",autouse=True)
 def get_driver(request):
-    opt = Options()
-    opt.add_argument("--headless")
-    driver = webdriver.Chrome(options=opt)
+    # opt = Options()
+    # opt.add_argument("--headless")
+    # driver = webdriver.Chrome(options=opt)
+    driver = webdriver.Chrome()
     driver.get("https://sqatools.in/dummy-booking-website/")
     driver.maximize_window()
     request.cls.driver = driver
